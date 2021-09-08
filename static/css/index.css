@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav.navbar{
+    margin: 0;
+    padding: 0;
+}
+
+.icon-bar{
+    background: #0d90db;
+}
+
+
+
+section.header {
+    margin-top:0px;
+    background: #289cc0;
+}
+section.header .carousel-text{
+    background: #4f6e88;
+    padding:20px 40px;
+    color: #f5f5f5;
+    font-family:Times, serif;
+}
+section.header .carousel-text h1{
+    margin-top: 0;
+    padding-left: 50px;
+    text-align: center;
+}
+section.header .text2{
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+    color: black;
+}
+
+  section.header a.btn:hover,section .explanation a.btn:hover{
+      background:#2c3f4f;;
+  }
+
+  
+
+/* media query */
+
+
+/* Short code  */
+
+.bg_blue{   background-color: #2cccff;}
+.bg_white{background-color: #fff;}
+.bg_grey{background-color: #f1f1f1;}
+.left_radius{border-start-start-radius: 6px;border-bottom-left-radius: 6px;}
+.right_radius{border-end-end-radius: 6px; border-top-right-radius: 6px;}
+.white{  color: #fff;}
+.p5{padding: 5px; margin: 3px; border-radius: 50%;}
+.p3{padding: 3px;}
+.p4{padding: 5px; margin-top:5px;}
+
+
+/* Home page Carousel slider */
+.navbar ul li a:hover, .navbar ul li a span:hover, h4 a:hover{
+    background: none;
+    color: #264864;
+    text-decoration: none;
+}
+
+.slider .item img {
+    height: 100% !important;
+  }
+  .carousel-caption {
+    left: 0;
+    width: 40%;
+    text-align: left;
+  }
+
+  .carousel-caption h1 {
+    font-weight: bold;
+  }
+  .carousel-caption a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background:#2cccff;
+    color: #fff;
+    border: none;
+    margin-top: 2em;
+  }
+  
+  /* Change position of AP Div */
+  .carousel-caption {
+    left:10%;
+    top: 20%;
+    color: black;
+  }
+
+  .custom-badge {
+    background-color: #343a40 !important;
+    color: #fff;
+    font-size: 11px;
+    padding: 5px;
+    padding-left: 11px;
+    padding-right: 11px;
+    border-radius: 7px
+}
+
+.card {
+    border: none;
+    padding: 15px;
+    cursor: pointer
+}
+
+.partners{
+    margin-top: 4em;
+}
+
+
+
+/* FOOTER SECTION */
+footer {
+    background: #111111;
+    color: #ddd;
+    font-size: 12px;
+  }
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer ul li a {
+    color: inherit;
+    padding: 5px 0px 5px 15px;
+    display: block;
+  }
+  footer ul li a:hover {
+    color: #fff;
+    background: #333;
+    text-decoration: none;
+  }
+  
+  footer .copyright {
+    margin: 10px 0px;
+    padding: 10px 0px;
+    border-top: 1px solid #ccc;
+  }
+   
+  /* media query  */
+
+  @media screen and (max-width:768px){
+    section.header {
+        margin-top:40px;
+        background: #800000;
+    }
+}
