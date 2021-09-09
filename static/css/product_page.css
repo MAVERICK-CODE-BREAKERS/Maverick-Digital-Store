@@ -100,8 +100,7 @@ body{
     margin-top: 50px;
 }
 .products_column {
-    flex: auto;
-    
+    flex: auto;   
 }
 #img1, #img2{
     margin-right: 160px;
