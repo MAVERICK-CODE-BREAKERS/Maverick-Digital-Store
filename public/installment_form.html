@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <title>Order Details</title> -->
-    <link rel="stylesheet" href="/static/css/order_details.css">
-  <link
+    <link rel="stylesheet" href="/static/css/installment-form.css">
+  
+   
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
@@ -22,12 +23,12 @@
       crossorigin="anonymous"
     ></script>
 
-    
-    <title>MDS | Order Details</title>
 
+   
+    <title>MDS | Installment</title>
 </head>
 <body>
-     <!-- copy from here -->
+   <!-- copy from here -->
     <!-- navbar -->
     <main>
       <!-- header opening tag -->
@@ -83,69 +84,73 @@
       </header>
       <!-- to here for the navbar. head to the css -->
 
-
-     <div class="navigation mt-3 pl-5">
-            <a href="/index.html" class="li-1">Home</a> > <a href="#" class="li-2"><span class="underline">Order Detail</span></a>
+    <!-- installment form -->
+    <div class="main-container bg_main">
+        <div class="navigation mt-3 pl-5">
+            <p><a href="/index.html" class="li-1">Home</a> > <a href="#" class="li-2"><span class="underline">Installment</span></a></p>
         </div>
+        <div class="container bg_grey mt-5 p-5">
+            <div class="terms">
+                <h3 class="c_red">Required documents are:</h3>
+                <p>
+                    <ul>
+                        <li>6 months statement of account, BVN</li>
+                        <li>Work ID, Letter of Employment</li>
+                        <li>Government Issued ID and ID number</li>
+                    </ul>
+                </p>
+                <form class="row g-3">
+                    <div class="mt-5">
+                     
+                        <label for="inputEmail4" class="form-label">Bank</label>
+                        <select class="form-select form-select" aria-label=".form-select-sm example">
+                            <option selected>Select Bank</option>
+                            <option value="1">Access</option>
+                            <option value="2">GT</option>
+                            <option value="3">FCMB</option>
+                        </select>
+                    </div>
+                    
+                    <div class="col-md-5">
+                        <label for="formFile" class="form-label">Bank Statement</label>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
+                    <div class="col-md-2">
+                    <!--  -->
+                    </div>
+                    <div class="col-md-5">
+                    <label for="inputPassword4" class="form-label">BVN</label>
+                    <input type="text" class="form-control" id="bvn">
+                    </div>
+                    <div class="col-md-5">
+                        <label for="formFile" class="form-label">Government Issued ID</label>
+                        <input class="form-control" type="file" id="GovernmentID">
+                    </div>
+                     <div class="col-md-2">
+                    <!--  -->
+                    </div>
+                    <div class="col-md-5">
+                    <label for="inputPassword4" class="form-label">Government Issued ID Number</label>
+                    <input type="text" class="form-control" id="IDNumber">
+                    </div>
+                    <div class="col-md-5">
+                        <label for="formFile" class="form-label">Letter of Employment</label>
+                        <input class="form-control" type="file" id="Employment">
+                    </div>
+                    
+                    <div class="col-12 mt-5">
+                    <button type="submit" class="btn btn-primary">SUBMIT</button>
+                    </div>
+                </form>
+                
+            
+            </div>
 
-    <table class="thank">
-        <tr>
-            <td>
-                Thank you. Your order has been received
-            </td>
-        </tr>
-       
-    </table>
-
-    <div class="order-breakDown">
-        <table>
-      <tr>
-          <td class="orderHead">
-              Order Number:
-          </td>
-          <td class="orderHead">Date:</td>
-          <td class="orderHead">Total:</td>
-          <td class="orderHead">Payment Method:</td>
-      </tr>
-      <tr>
-          <td class="orderList">48</td>
-          <td class="orderList">August 11, 2021</td>
-          <td class="orderList">#4,000</td>
-          <td class="orderList">Debit/Credit Card</td>
-      </tr>
-        </table>
+        </div>
     </div>
 
-    <h1>
-        Order Details
-    </h1>
 
-    <div class="details">
-        <div class="product">
-            <h3>Product</h3>
-            <ul>
-                <li>Product A x 2</li>
-                <li>Subb-Total</li>
-                <li>Tax</li>
-                <li>Shipping</li>
-                <li>Payment Method</li>
-                <li>Total</li>
-            </ul>
-        </div>
-        <div class="sub-total">
-            <h3>Sub-total</h3>
-            <ul>
-                <li>#2,000</li>
-                <li>#4,000</li>
-                <li>#100</li>
-                <li>#500</li>
-                <li>Debit/Credit Card</li>
-                <li> <b> #6,600</b></li>
-            </ul>
-        </div>
-    </div>
 
-    
    <footer>
       <div class="footer-contents">
         <div class="contact-us-container">
@@ -218,7 +223,7 @@
         
       </div>
       <div class="">
-        <div class="text-center copy mt-4">
+        <div class="text-center copy">
                  
                   Copyright &copy; 2021 MDS. All Rights Reserved.
                 </div>

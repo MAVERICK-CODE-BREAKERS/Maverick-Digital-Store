@@ -1,0 +1,18 @@
+/* For you to be eligible for this offer, you need to provide the documents/information listed below: valid id - International Passport, Driver’s License, National ID or Voter’s Card BVN ATM Card You must also be a regular income earner */
+
+p{position: absolute;
+width: 1260px;
+height: 228px;
+
+font-family: Josefin Sans;
+font-style: normal;
+font-weight: 300;
+font-size: 36px;
+line-height: 35px;
+/* or 97% */
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #000000;
+}
