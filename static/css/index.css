@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
 body{
     margin: 0;
     padding: 0;
-                                                
+    font-family: 'Josefin Sans', sans-serif;                                         
 }
 html{
     scroll-behavior: smooth;
@@ -11,13 +14,21 @@ nav.navbar{
     padding: 0;
 }
 nav .navbar-nav{
-margin-left: 7em;
+margin-left: 9em;
+}
+.navbar-nav>li>a {
+    padding-top: 5px;
+    padding-bottom: 1px;
 }
 
+.navbar-brand>img {
+    display: block;
+    height: 50px;
+    margin-top: -7px;
+}
 .icon-bar{
     background: #0d90db;
 }
-
 section.header {
     margin-top:0px;
     background: #289cc0;
@@ -43,18 +54,14 @@ section.header .text2{
   section.header a.btn:hover,section .explanation a.btn:hover{
       background:#2c3f4f;;
   }
-
-  
-
 /* media query */
-
 
 /* Short code  */
 
 .bg_blue{   background-color: #2cccff;}
 .bg_white{background-color: #fff;}
 .bg_grey{background-color: #f1f1f1;}
-.left_radius{border-start-start-radius: 6px;border-bottom-left-radius: 6px;}
+.left_radius{border-radius: 6px;}
 .right_radius{border-end-end-radius: 6px; border-top-right-radius: 6px;}
 .white{  color: #fff;}
 .p5{padding: 5px; margin: 3px; border-radius: 50%;}
@@ -62,6 +69,8 @@ section.header .text2{
 .pt3{padding-top: 8px;}
 .p4{padding: 5px; margin-top:5px;}
 .p7{padding: 19px;margin: 10px 0px;}
+.p8{padding: 5px;margin: 10px 0px;}
+.text-danger{color: red}
 
 
 /* Home page Carousel slider */
