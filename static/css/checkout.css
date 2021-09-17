@@ -216,7 +216,7 @@ p.footer-description1 {
 /* to here */
 
 
-/* copy from here for responsiveness */
+/* copy from here for responsiveness of nav bar */
 @media screen and (max-width: 768px) {
   #navigation.navigation-category-content {
     display: none;
