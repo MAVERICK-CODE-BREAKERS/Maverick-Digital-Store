@@ -13,10 +13,17 @@
   padding: 8% 0 0;
   margin: auto;
 }
+.login-page h2{
+  color: #7ADFFF;
+  font-weight: 900;
+  padding-bottom: 20px;
+  /* text-decoration: underline; */
+  text-transform: uppercase;
+}
 .form {
   position: relative;
   z-index: 1;
-  background: #FFFFFF;
+  background: #FFF;
   max-width: 360px;
   margin: 0 auto 100px;
   padding: 45px;
@@ -97,5 +104,5 @@
   color: #EF3B3A;
 }
 body {
-  background: #7ADFFF; /* fallback for old browsers */
+  background: #ccc; /* fallback for old browsers */
 }

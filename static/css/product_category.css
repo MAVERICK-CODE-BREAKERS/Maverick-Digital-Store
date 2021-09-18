@@ -380,7 +380,9 @@ p.footer-description1 {
   font-weight: 600;
   font-family: "Josefin Sans", sans-serif;
 }
-
+.Submit-Mail{
+  border: none;
+}
 
 .fa-envelope {
   color: #0a1c22;
