@@ -1,0 +1,262 @@
+
+
+header {
+  min-height: 10vh;
+  background-color: #7adfff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+nav.navigation-contents {
+  width: 95%;
+  min-height: 5vh;
+  display: flex;
+}
+
+.navbar-brand-container {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.navigation-item-container{
+  width: 90%;
+}
+div.navigation-image-container > img{
+ margin-top: 20px;
+}
+
+.navigation-item-container1 {
+  display: none;
+  margin: 5px;
+}
+
+.navigation-category-content {
+  flex: 2;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  margin: 25px 0px;
+  list-style: none;
+}
+
+.nav-links-item > a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 900;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.icon-links {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 20px 0px;
+  color: white;
+}
+
+.navigation-icons {
+  flex: 2;
+}
+
+
+/* breadcumb */
+/* .navigation{margin-top: 10px; margin-left: 10px;} */
+.li-1{text-decoration: none; color: #444444;}
+.li-2{color: #444444;}
+.underline{text-decoration: underline;} 
+
+/* Css Footer Design */
+
+footer {
+  background-color: #0a1c22;
+  width: 100%;
+  margin-top: 1500px;
+  position: absolute;
+}
+
+.footer-contents {
+  width: 95%;
+  min-height: calc(30vh - 12.8px);
+  margin: 0 auto;
+  display: flex;
+  color: whitesmoke;
+}
+
+.contact-us-container {
+  flex: 1;
+}
+
+footer-title {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+p.footer-description {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+ul.footer-links {
+  list-style: none;
+  padding-left: 0px;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+}
+li.footer-links-item > a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+.fa-home {
+  font-size: 24px;
+}
+
+#envelope {
+  color: whitesmoke;
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.fa-phone {
+  color: whitesmoke;
+  margin-right: 8px;
+  font-size: 24px;
+}
+.subscribe-container {
+  flex: 1;
+}
+
+.social-media-container {
+  flex: 1;
+}
+
+#facebook {
+  color: #0a1c22;
+  background-color: whitesmoke;
+  padding: 8px;
+  width: 42px;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+#twitter {
+  color: #0a1c22;
+  background-color: whitesmoke;
+  padding: 8px;
+  width: 42px;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+#instagram {
+  color: #0a1c22;
+  background-color: whitesmoke;
+  padding: 8px;
+  width: 42px;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.useful-links-container {
+  flex: 1;
+}
+
+p.footer-description1 {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Josefin Sans", sans-serif;
+}
+.fa-envelope {
+  color: #0a1c22;
+}
+.copy{
+  margin-top: 18px;
+  color: #ffffff;
+}
+
+.Submit-Mail{
+  border: none;
+}
+
+/* responsiveness for header */
+
+@media screen and (max-width: 768px) {
+  #navigation.navigation-category-content {
+    display: none;
+  }
+  div.navigation-image-container > img {
+    margin-top: 0px;
+  }
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links > li {
+    margin: 10px 0px;
+  }
+  nav.navigation-contents {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  #navigation1.navigation-icons {
+    display: none;
+  }
+  .navigation-item-container1 {
+    display: block;
+  }
+  .footer-contents {
+    flex-direction: column;
+  }
+  .contact-us-container {
+    text-align: center;
+  }
+  .useful-links-container {
+    text-align: center;
+  }
+  .social-media-container {
+    text-align: center;
+  }
+  .subscribe-container {
+    text-align: center;
+  }
+  #form-container {
+    margin: 0 auto;
+  }
+}
+
+/* end here for the navbar and footer responsiveness
+
+/* Main Body Design */
+main > h2{
+  text-align: center;
+}
+.card-1{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+.text{
+  border: 2px solid blue;
+}
+
+
+
