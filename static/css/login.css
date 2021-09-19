@@ -1,108 +1,79 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 
-/* breadcumb */
-.navigation{margin-top: 10px; margin-left: 10px;}
-.li-1{text-decoration: none; color: #ffffff;}
-.li-2{color: #ffffff;}
-.underline{text-decoration: underline;}
-
-
-.login-page {
-  width: 360px;
-  padding: 8% 0 0;
-  margin: auto;
-}
-.login-page h2{
-  color: #7ADFFF;
-  font-weight: 900;
-  padding-bottom: 20px;
-  /* text-decoration: underline; */
-  text-transform: uppercase;
-}
-.form {
-  position: relative;
-  z-index: 1;
-  background: #FFF;
-  max-width: 360px;
-  margin: 0 auto 100px;
-  padding: 45px;
-  text-align: center;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-}
-.form input {
-  font-family: "Roboto", sans-serif;
-  outline: 0;
-  background: #f2f2f2;
-  width: 100%;
-  border: 0;
-  margin: 0 0 15px;
-  padding: 15px;
-  box-sizing: border-box;
-  font-size: 14px;
-}
-.form button {
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  outline: 0;
-  background: #7ADFFF;
-  width: 100%;
-  border: 0;
-  padding: 15px;
-  color: #FFFFFF;
-  font-size: 14px;
-  -webkit-transition: all 0.3 ease;
-  transition: all 0.3 ease;
-  cursor: pointer;
-}
-.form button:hover,.form button:active,.form button:focus {
-  background: #7ADFFF ;
-}
-.form .message {
-  margin: 15px 0 0;
-  color: #b3b3b3;
-  font-size: 12px;
-}
-.form .message a {
-  color: #7ADFFF;
-  text-decoration: none;
-}
-.form .register-form {
-  display: none;
-}
-.container {
-  position: relative;
-  z-index: 1;
-  max-width: 300px;
-  margin: 0 auto;
-}
-.container:before, .container:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.container .info {
-  margin: 50px auto;
-  text-align: center;
-}
-.container .info h1 {
-  margin: 0 0 15px;
+*{
   padding: 0;
-  font-size: 36px;
-  font-weight: 300;
-  color: #1a1a1a;
+  margin: 0;
+  box-sizing: border-box;
 }
-.container .info span {
-  color: #4d4d4d;
-  font-size: 12px;
+/* breadcumb */
+.li-1{text-decoration: none; color: #444444;}
+.li-2{color: #444444;}
+.underline{text-decoration: underline;} 
+
+
+body{
+  background-color: #7ADFFF;
+  font-family: 'Josefin Sans', sans-serif;
 }
-.container .info span a {
-  color: #000000;
+.main-div{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 50px; 
+}
+.div-1{
+  background: #fff;
+  width: 100%;
+  max-width: 25rem;
+  height: 100%;
+  max-height: 25rem ;
+ 
+}
+.Path-flex{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 35px;
+  padding-bottom: 20px;
+  max-width: 100%;
+  width: 25rem;
+}
+.Path-flex > a > h3{text-transform: uppercase;}
+
+/* .Path-flex > h3 :active{
+  text-decoration: underline;
+} */
+.Login{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+.Login > input{
+  border-radius: 25px;
+  border: 1px solid #000;
+  /*background-color: #2f2f2f;*/
+  padding: 10px;
+}
+.Login > input::placeholder {
+  color: black;
+  font-weight: 700;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.group .check{
+  float: left;
+}
+.group a{
+  float: right;
   text-decoration: none;
+  color: #000;
 }
-.container .info span .fa {
-  color: #EF3B3A;
-}
-body {
-  background: #ccc; /* fallback for old browsers */
+.Login input[type="submit"]{
+  width: 40%;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: auto;
+  background-color: #7ADFFF;
 }
