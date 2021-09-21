@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="/static/css/installment-form.css">
-     
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link
       rel="stylesheet"
@@ -22,6 +22,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <title>MDS | Installment</title>
 </head>
 <body>
@@ -60,13 +61,23 @@
           <div class="navigation-icons" id="navigation1">
             <ul class="icon-links">
               <li class="icon-links-item" >
-                <i class="fa fa-heart" style="font-size: 36px"></i>
+                <i class="fa fa-heart" style="font-size: 26px"></i>
+                <div id="wish">
+                 
+                </div>
               </li>
               <li class="icon-links-item">
-                <i class="fa fa-shopping-cart" style="font-size: 36px"></i>
+                <i class="fa fa-shopping-cart" style="font-size: 26px"></i>
+                 <div id="cart">
+                  
+                </div>
               </li>
-              <li class="icon-links-item">
-                <i class="fa fa-search" style="font-size: 36px"></i>
+              <li class="icon-links-item active">
+                <i class="fa fa-search" aria-hidden="true" style="font-size: 26px"></i>
+                <div class="search-box">
+                  <input type="text" class="text" placeholder=""/>
+                  <input type="button" value="Search"/>
+  		          </div>
               </li>
               <li class="icon-links-item">
                 <button type="button" class="btn btn-light">
@@ -112,6 +123,7 @@
                 will contact you within 12hours.
             </p>
         </div>
+        <button id="btn">click</button>
 
     </div>
     </div>
@@ -197,5 +209,7 @@
             
               </div>
     </footer>
+
+    <script src="/static/js/nav.js"></script>
 </body>
 </html>
