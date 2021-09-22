@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/css/product_page.css">
+    <link rel="stylesheet" href="/static/css/product_page.css">
    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -91,7 +91,7 @@
 
         <section class="product_section clearfix">
             <div class="product_img">
-                <img src="../static/img/Apple-iPhone-12-Pro-Max.png" class="apple-iphone" alt="Apple-iPhone">
+                <img src="/static/img/Apple-iPhone-12-Pro-Max.png" class="apple-iphone" alt="Apple-iPhone">
             </div>
 
             <!-- Product details -->
@@ -99,11 +99,11 @@
                 <p class="product_A">Product A</p>
                 <p>N45,000</p>
                 <p>
-                    <i class="fas fa-star" style="color: #eacc68;"></i>
-                    <i class="fas fa-star" style="color: #eacc68;"></i>
-                    <i class="fas fa-star" style="color: #eacc68;"></i>
-                    <i class="fas fa-star" style="color: #eacc68;"></i>
-                    <i class="fas fa-star" style="color: #eacc68;"></i>
+                    <i class="fa fa-star" style="color: #eacc68;"></i>
+                    <i class="fa fa-star" style="color: #eacc68;"></i>
+                    <i class="fa fa-star" style="color: #eacc68;"></i>
+                    <i class="fa fa-star" style="color: #eacc68;"></i>
+                    <i class="fa fa-star" style="color: #eacc68;"></i>
 
                     <span class="review">(1 Customer Review)</span>
                 </p>
@@ -112,14 +112,21 @@
                 <p>Available On Back Order</p>
 
                 <div class="add_to_cart">
-                    <p>
-                        <span><button class="add_cart">&minus;  1  &plus;</button></span>
-                        <span><button class="add_cart_button">Add to Cart</button></span>
-                    </p>
+                    <div>
+                        <button class="counter">
+                          <span onclick="decreaseInput()">-</span>
+                          <input type="text" value="1" id="inputNumber">
+                          <span onclick="increaseInput()">+</span>
+                        </button>
+                        
+                        <span>
+                          <button class="add_cart_button">Add to Cart</button>
+                        </span>
+                    </div>
                 </div>
 
                 <p class="add_to_wishlist">
-                    <span><i class="far fa-heart fa-lg"></i></span>
+                    <span><i class="fa fa-heart-o fa-lg"></i></span>
                     <span>Add to Wishlist</span>
                 </p>
             </div>
@@ -128,26 +135,35 @@
         <!-- Related Products -->
         <section class="rel_product">
             <h3>Related Products</h3>
+
             <div class="products_row">
                 <div class="products_column" id="img1">
                     <div class="phone_img">
-                        <img src="../static/img/image_24.png" alt="Apple-iPhone">
+                      <i class="fa fa-shopping-cart" id="shopping-cart1" style="font-size: 24px"></i>
+                      <i class="fa fa-heart" style="font-size: 24px" id="heart1"></i>
+                      <img src="/static/img/image_24.png" alt="Apple-iPhone">     
                     </div>
                     
                     <h4>Product T <span class="price">N5,000</span></h4>
                     <p>A Very Rugged And Useful <br> Laptop For ....</p>
                 </div>
+
                 <div class="products_column" id="img2">
                     <div class="phone_img">
-                        <img src="../static/img/image_25.png" alt="Apple-iPhone">
+                      <i class="fa fa-shopping-cart" id="shopping-cart2" style="font-size: 24px"></i>
+                      <i class="fa fa-heart" style="font-size: 24px" id="heart2"></i>
+                      <img src="/static/img/image_25.png" alt="Apple-iPhone">    
                     </div>
                     
                     <h4>Product T <span class="price">N5,000</span></h4>
                     <p>A Very Rugged And Useful <br> Laptop For ....</p>
                 </div>
+                
                 <div class="products_column">
                     <div class="phone_img">
-                        <img src="../static/img/image_26.png" alt="Apple-iPhone">
+                      <i class="fa fa-shopping-cart" id="shopping-cart3" style="font-size: 24px"></i>
+                      <i class="fa fa-heart" style="font-size: 24px" id="heart3"></i>
+                      <img src="/static/img/image_26.png" alt="Apple-iPhone">   
                     </div>
                     
                     <h4>Product T <span class="price">N5,000</span></h4>
@@ -156,9 +172,9 @@
               </div>
         </section>
     </main>
+<!-- End of Related Products -->
 
-
-    
+<!-- Footer -->
    <footer>
       <div class="footer-contents">
         <div class="contact-us-container">
@@ -238,8 +254,10 @@
             
               </div>
     </footer>
+  <!-- End of Footer -->
 
-<script src="static/js/app.js"></script>
+<script src="/static/js/app.js"></script>
+<script src="/static/js/product_page.js"></script>
 
 </body>
 </html>
