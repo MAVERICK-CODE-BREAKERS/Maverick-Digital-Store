@@ -1,8 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap");
 
-*{
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  /* list-style: none; */
+  /* font-family: 'Josefin Sans', sans-serif; */
 }
+
+/* copy from here for the navbar */
 header {
   min-height: 10vh;
   background-color: #7adfff;
@@ -11,6 +18,8 @@ header {
   align-items: center;
   width: 100%;
 }
+
+
 nav.navigation-contents {
   width: 95%;
   min-height: 5vh;
@@ -66,19 +75,31 @@ div.navigation-image-container > img{
   flex: 2;
 }
 
+/* stop here and scroll to the bottom */
+
+.main-container{min-height: 100vh; }
+
+/* .bg_blue{   background-color: #2cccff;} */
+.bg_main{background-color: #F8F8F8;}
+.bg_grey{background-color: #E5E5E5;}
+.c_red{color: #FA0A0A;}
+.pl-5{margin-left: 5px;}
+.p-5{padding: 10px;}
+
 
 /* breadcumb */
+/* .navigation{margin-top: 10px; margin-left: 10px;} */
 .li-1{text-decoration: none; color: #444444;}
 .li-2{color: #444444;}
 .underline{text-decoration: underline;} 
 
-/* Css Footer Design */
 
+
+/* copy from here */
 footer {
   background-color: #0a1c22;
   width: 100%;
-  /* margin-top: 1500px; */
-  position: absolute;
+  margin-top: 40px;
 }
 
 .footer-contents {
@@ -109,6 +130,7 @@ ul.footer-links {
   font-weight: 700;
   font-family: "Josefin Sans", sans-serif;
 }
+
 li.footer-links-item > a {
   text-decoration: none;
   color: whitesmoke;
@@ -187,6 +209,10 @@ p.footer-description1 {
   font-weight: 600;
   font-family: "Josefin Sans", sans-serif;
 }
+.Submit-Mail{
+  border: none;
+}
+
 .fa-envelope {
   color: #0a1c22;
 }
@@ -195,12 +221,12 @@ p.footer-description1 {
   color: #ffffff;
 }
 
-.Submit-Mail{
-  border: none;
-}
 
-/* responsiveness for header */
 
+
+/* to here */
+
+/* copy from here for responsiveness */
 @media screen and (max-width: 768px) {
   #navigation.navigation-category-content {
     display: none;
@@ -246,62 +272,4 @@ p.footer-description1 {
   }
 }
 
-/* end here for the navbar and footer responsiveness */
-main{
-  background: #f8f8f8;
-}
-
-/* Main Body Design */
-.top-topic{
-  font-weight: 700;
-  padding-left: 2rem;
-  font-family: 'Josefin Sans', sans-serif;
-}
-.body-body{
-  margin: 2rem;
-}
-.card-1{
-  display: flex;
-  height: 100%;
-  max-height: 8rem;
-  background-color: #fff;
-  margin-bottom: 2rem;
-  border-radius: 10px;
-  position: relative;
-}
-.card-1 img{
-  width: 6rem;
-  height: 6rem;
-  background-color: #E5E5E5;
-  border-radius: 15px;
-  margin: 1rem;
-}
-.card-1 .fas{
-  color: red;
-  position: absolute;
-  right: 10px;
-  top: 5px;
-}
-.product-details{
-  margin-top: 2rem;
-  font-size: 0.9rem;
-  font-family: 'Josefin Sans', sans-serif;
-}
-.product-details .product-name .product-price{
-  font-weight: bolder;
-}
-.stock-info{
-  font-size: small;
-}
-.stock-info > span{
-  color: #008000;
-}
-.inform-box{
-  margin-top: 30px;
-}
-body{
-  background: #f8f8f8;
-  font-family: 'Josefin Sans', sans-serif;
-}
-
-
+/* end here for the navbar and footer responsiveness  now to Javascript. head to index and copy everything there*/

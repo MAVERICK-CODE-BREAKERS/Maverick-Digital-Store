@@ -1,3 +1,6 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap");
+
 *{
     margin: 0;
     padding: 0;
@@ -7,13 +10,88 @@
 body{
     font-family: 'Josefin Sans', sans-serif;
 }
-.product_nav{
+/* copy from here for the navbar */
+header {
+  min-height: 10vh;
+  background-color: #7adfff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+nav.navigation-contents {
+  width: 95%;
+  min-height: 5vh;
+  display: flex;
+}
+
+.navbar-brand-container {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.navigation-item-container{
+  width: 90%;
+}
+div.navigation-image-container > img{
+ margin-top: 20px;
+}
+
+.navigation-item-container1 {
+  display: none;
+  margin: 5px;
+}
+
+.navigation-category-content {
+  flex: 2;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  margin: 25px 0px;
+  list-style: none;
+}
+
+.nav-links-item > a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 900;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.icon-links {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 20px 0px;
+  color: white;
+}
+
+.navigation-icons {
+  flex: 2;
+}
+
+/* stop here and scroll to the bottom */
+
+/* breadcumb */
+.navigation{margin-top: 10px; margin-left: 10px;}
+.li-1{text-decoration: none; color: #444444;}
+.li-2{color: #444444;}
+.underline{text-decoration: underline;}
+
+
+/* .product_nav{
     margin: 20px 0px 0px 30px;
     font-size: 25px;
-}
-.product_name{
+} */
+/* .product_name{
     border-bottom: 5px solid #29CBFF;
-}
+} */
 .product_section{
     display: flex;
     justify-content: space-between;
@@ -33,41 +111,53 @@ body{
     border-radius: 20px
 }
 .apple-iphone{
-    height: 500px;
+    height: 400px;
 }
 .product_details p{
-    padding-bottom: 15px;
-    font-size: 25px;
+    padding-bottom: 10px;
+    font-size: 20px;
     font-weight: bold;
-    line-height: 31px;
+    line-height: 21px;
 }
 .product_A{
-    font-size: 30px;
+    font-size: 25px;
 }
 .review{
-    margin-left: 10px;
+    margin-left: 7px;
 }
 #product_description{
     font-size: 15px;
 }
 
 .out_of_stock{
-    margin-top: 50px;
+    margin-top: 40px;
 }
 .add_to_cart{
     margin: 10px 0;
 }
-.add_cart{
+.counter{
     border: 1px solid #000;
-    padding: 10px 15px;
-    letter-spacing: 15px;
+    padding: 5px 15px;
     border-radius: 10px;
     font-weight: bold;
     background: none;
     font-size: 24px;
 }
+.counter input{
+  width: 80px;
+  border: 0;
+  appearance: none;
+  outline: 0;
+  text-align: center;
+}
+.counter span {
+  font-size: 25px;
+  /* padding: 0 10px; */
+  cursor: pointer;
+  user-select: none;
+}
 .add_cart_button{
-    padding: 18px 26px;
+    padding: 10px 15px;
     background: #2CCCFF;
     color: #ffffff;
     border: 1px solid #FFFFFF;
@@ -100,10 +190,46 @@ body{
     margin-top: 50px;
 }
 .products_column {
-    flex: auto;   
+    flex: auto;
+    
 }
 #img1, #img2{
     margin-right: 160px;
+}
+#shopping-cart1, #shopping-cart2, #shopping-cart3 {
+  position: absolute;
+  background-color: #7adfff;
+  padding: 10px;
+  border-radius: 50%;
+  color: whitesmoke;
+}
+#shopping-cart1 {
+  left: 350px;
+}
+#shopping-cart2 {
+  left: 760px;
+}
+#shopping-cart3 {
+  left: 1170px;
+}
+#heart1, #heart2, #heart3 {
+  position: absolute;
+  background-color: #7adfff;
+  padding: 10px;
+  border-radius: 50%;
+  color: whitesmoke;
+}
+#heart1 {
+  left: 350px;
+  bottom: -250px;
+}
+#heart2 {
+  left: 760px;
+  bottom: -250px;
+}
+#heart3 {
+  left: 1170px;
+  bottom: -250px;
 }
 .products_column h4{
     font-size: 20px;
@@ -118,3 +244,181 @@ body{
     float: right; 
     color: #FF1010;
 }
+
+
+/* copy from here */
+footer {
+  background-color: #0a1c22;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.footer-contents {
+  width: 95%;
+  min-height: calc(30vh - 12.8px);
+  margin: 0 auto;
+  display: flex;
+  color: whitesmoke;
+}
+
+.contact-us-container {
+  flex: 1;
+}
+
+footer-title {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+p.footer-description {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+ul.footer-links {
+  list-style: none;
+  padding-left: 0px;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+li.footer-links-item > a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+.fa-home {
+  font-size: 24px;
+}
+
+#envelope {
+  color: whitesmoke;
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.fa-phone {
+  color: whitesmoke;
+  margin-right: 8px;
+  font-size: 24px;
+}
+.subscribe-container {
+  flex: 1;
+}
+
+.social-media-container {
+  flex: 1;
+}
+
+#facebook {
+  color: #0a1c22;
+  background-color: whitesmoke;
+  padding: 8px;
+  width: 42px;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+#twitter {
+  color: #0a1c22;
+  background-color: whitesmoke;
+  padding: 8px;
+  width: 42px;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+#instagram {
+  color: #0a1c22;
+  background-color: whitesmoke;
+  padding: 8px;
+  width: 42px;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.useful-links-container {
+  flex: 1;
+}
+
+p.footer-description1 {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+
+.fa-envelope {
+  color: #0a1c22;
+}
+.copy{
+  margin-top: 18px;
+  color: #ffffff;
+}
+
+
+
+
+/* to here */
+
+/* copy from here for responsiveness */
+@media screen and (max-width: 768px) {
+  #navigation.navigation-category-content {
+    display: none;
+  }
+  div.navigation-image-container > img {
+    margin-top: 0px;
+  }
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links > li {
+    margin: 10px 0px;
+  }
+  nav.navigation-contents {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  #navigation1.navigation-icons {
+    display: none;
+  }
+  .navigation-item-container1 {
+    display: block;
+  }
+  .footer-contents {
+    flex-direction: column;
+  }
+  .contact-us-container {
+    text-align: center;
+  }
+  .useful-links-container {
+    text-align: center;
+  }
+  .social-media-container {
+    text-align: center;
+  }
+  .subscribe-container {
+    text-align: center;
+  }
+  #form-container {
+    margin: 0 auto;
+  }
+}
+
+/* end here for the navbar and footer responsiveness  now to Javascript. head to index and copy everything there*/

@@ -1,0 +1,55 @@
+*{
+    
+    align-content: center;
+    max-width: 100%;
+}
+
+#Cartbuy{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.checkout{
+    border: 1px solid black;
+    margin-left: 200px;
+    padding: 20px;
+}
+a{
+    text-decoration: none ;
+}
+button{
+    border-radius: 10px;
+}
+
+#button{
+    display: flex;
+    align-items: stretch;
+}
+#btn1{
+    background-color: white;
+    padding: 5px 10px;
+}
+.btn2{
+    background-color: rgb(15, 184, 221);
+    color: white; 
+    padding: 5px 10px;
+    margin-left: 0.3rem;
+    border: white;
+}
+    
+#btn3{
+    background-color: rgb(116, 115, 119);
+    color: white; 
+    padding: 5px 10px;
+    margin-left: 8rem;
+    border: white;
+}
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}

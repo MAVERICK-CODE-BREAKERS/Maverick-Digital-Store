@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/product_page.css">
-   <link
+    <link rel="stylesheet" href="./../static/css/installment-form.css">
+  
+   
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
@@ -20,13 +22,13 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <title>MDS | Product Page</title>
+
 
    
-
+    <title>MDS | Installment</title>
 </head>
 <body>
-  <!-- copy from here -->
+   <!-- copy from here -->
     <!-- navbar -->
     <main>
       <!-- header opening tag -->
@@ -82,99 +84,73 @@
       </header>
       <!-- to here for the navbar. head to the css -->
 
-    <!-- Product Page -->
-    <main>
+    <!-- installment form -->
+    <div class="main-container bg_main">
         <div class="navigation mt-3 pl-5">
-            <p><a href="/index.html" class="li-1">Home</a> > <a href="#" class="li-2"><span class="underline">Product A</span></a></p>
+            <p><a href="/index.html" class="li-1">Home</a> > <a href="#" class="li-2"><span class="underline">Installment</span></a></p>
         </div>
-        <!-- <p class="product_nav">Home > <span class="product_name">Product A</span></p> -->
-
-        <section class="product_section clearfix">
-            <div class="product_img">
-                <img src="/static/img/Apple-iPhone-12-Pro-Max.png" class="apple-iphone" alt="Apple-iPhone">
-            </div>
-
-            <!-- Product details -->
-            <div class="product_details">
-                <p class="product_A">Product A</p>
-                <p>N45,000</p>
+        <div class="container bg_grey mt-5 p-5">
+            <div class="terms">
+                <h3 class="c_red">Required documents are:</h3>
                 <p>
-                    <i class="fa fa-star" style="color: #eacc68;"></i>
-                    <i class="fa fa-star" style="color: #eacc68;"></i>
-                    <i class="fa fa-star" style="color: #eacc68;"></i>
-                    <i class="fa fa-star" style="color: #eacc68;"></i>
-                    <i class="fa fa-star" style="color: #eacc68;"></i>
-
-                    <span class="review">(1 Customer Review)</span>
+                    <ul>
+                        <li>6 months statement of account, BVN</li>
+                        <li>Work ID, Letter of Employment</li>
+                        <li>Government Issued ID and ID number</li>
+                    </ul>
                 </p>
-                <p id="product_description">A Very Rugged And Useful Laptop <br> For ....</p>
-                <p class="out_of_stock">Out Of Stock</p>
-                <p>Available On Back Order</p>
-
-                <div class="add_to_cart">
-                    <div>
-                        <button class="counter">
-                          <span onclick="decreaseInput()">-</span>
-                          <input type="text" value="1" id="inputNumber">
-                          <span onclick="increaseInput()">+</span>
-                        </button>
-                        
-                        <span>
-                          <button class="add_cart_button">Add to Cart</button>
-                        </span>
-                    </div>
-                </div>
-
-                <p class="add_to_wishlist">
-                    <span><i class="fa fa-heart-o fa-lg"></i></span>
-                    <span>Add to Wishlist</span>
-                </p>
-            </div>
-        </section>
-
-        <!-- Related Products -->
-        <section class="rel_product">
-            <h3>Related Products</h3>
-
-            <div class="products_row">
-                <div class="products_column" id="img1">
-                    <div class="phone_img">
-                      <i class="fa fa-shopping-cart" id="shopping-cart1" style="font-size: 24px"></i>
-                      <i class="fa fa-heart" style="font-size: 24px" id="heart1"></i>
-                      <img src="/static/img/image_24.png" alt="Apple-iPhone">     
+                <form class="row g-3">
+                    <div class="mt-5">
+                     
+                        <label for="inputEmail4" class="form-label">Bank</label>
+                        <select class="form-select form-select" aria-label=".form-select-sm example">
+                            <option selected>Select Bank</option>
+                            <option value="1">Access</option>
+                            <option value="2">GT</option>
+                            <option value="3">FCMB</option>
+                        </select>
                     </div>
                     
-                    <h4>Product T <span class="price">N5,000</span></h4>
-                    <p>A Very Rugged And Useful <br> Laptop For ....</p>
-                </div>
-
-                <div class="products_column" id="img2">
-                    <div class="phone_img">
-                      <i class="fa fa-shopping-cart" id="shopping-cart2" style="font-size: 24px"></i>
-                      <i class="fa fa-heart" style="font-size: 24px" id="heart2"></i>
-                      <img src="/static/img/image_25.png" alt="Apple-iPhone">    
+                    <div class="col-md-5">
+                        <label for="formFile" class="form-label">Bank Statement</label>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
+                    <div class="col-md-2">
+                    <!--  -->
+                    </div>
+                    <div class="col-md-5">
+                    <label for="inputPassword4" class="form-label">BVN</label>
+                    <input type="text" class="form-control" id="bvn">
+                    </div>
+                    <div class="col-md-5">
+                        <label for="formFile" class="form-label">Government Issued ID</label>
+                        <input class="form-control" type="file" id="GovernmentID">
+                    </div>
+                     <div class="col-md-2">
+                    <!--  -->
+                    </div>
+                    <div class="col-md-5">
+                    <label for="inputPassword4" class="form-label">Government Issued ID Number</label>
+                    <input type="text" class="form-control" id="IDNumber">
+                    </div>
+                    <div class="col-md-5">
+                        <label for="formFile" class="form-label">Letter of Employment</label>
+                        <input class="form-control" type="file" id="Employment">
                     </div>
                     
-                    <h4>Product T <span class="price">N5,000</span></h4>
-                    <p>A Very Rugged And Useful <br> Laptop For ....</p>
-                </div>
+                    <div class="col-12 mt-5">
+                    <button type="submit" class="btn btn-primary">SUBMIT</button>
+                    </div>
+                </form>
                 
-                <div class="products_column">
-                    <div class="phone_img">
-                      <i class="fa fa-shopping-cart" id="shopping-cart3" style="font-size: 24px"></i>
-                      <i class="fa fa-heart" style="font-size: 24px" id="heart3"></i>
-                      <img src="/static/img/image_26.png" alt="Apple-iPhone">   
-                    </div>
-                    
-                    <h4>Product T <span class="price">N5,000</span></h4>
-                    <p>A Very Rugged And Useful <br> Laptop For ....</p>
-                </div>
-              </div>
-        </section>
-    </main>
-<!-- End of Related Products -->
+            
+            </div>
 
-<!-- Footer -->
+        </div>
+    </div>
+
+
+
    <footer>
       <div class="footer-contents">
         <div class="contact-us-container">
@@ -198,19 +174,19 @@
 
           <ul class="footer-links">
             <li class="footer-links-item">
-              <a href=""> <span>&#62;</span> Home </a>
+              <a href="index.html"> <span>&#62;</span> Home </a>
             </li>
             <li class="footer-links-item">
-              <a href=""> <span>&#62;</span> About Us </a>
+              <a href="#"> <span>&#62;</span> About Us </a>
             </li>
             <li class="footer-links-item">
-              <a href=""> <span>&#62;</span> Products </a>
+              <a href="product_category.html"> <span>&#62;</span> Products </a>
             </li>
             <li class="footer-links-item">
-              <a href=""> <span>&#62;</span> Wishlist </a>
+              <a href="wishlist.html"> <span>&#62;</span> Wishlist </a>
             </li>
             <li class="footer-links-item">
-              <a href=""> <span>&#62;</span> Cart </a>
+              <a href="cart_page.html"> <span>&#62;</span> Cart </a>
             </li>
           </ul>
         </div>
@@ -240,24 +216,19 @@
                 id="inlineFormInputGroupUsername"
                 placeholder="Email"
               />
-              <div class="input-group-text"><i class="fa fa-envelope"></i></div>
+              <button class="Submit-Mail"><div class="input-group-text"><i class="fa fa-envelope"></i></div></button>
             </div>
           </div>
         </div>
         
       </div>
       <div class="">
-        <div class="text-center copy mt-4">
+        <div class="text-center copy">
                  
                   Copyright &copy; 2021 MDS. All Rights Reserved.
                 </div>
             
               </div>
     </footer>
-  <!-- End of Footer -->
-
-<script src="/static/js/app.js"></script>
-<script src="/static/js/product_page.js"></script>
-
 </body>
 </html>
