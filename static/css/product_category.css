@@ -1,15 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap");
 
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  /* list-style: none; */
+  /* font-family: 'Josefin Sans', sans-serif; */
 }
 
 /* copy from here for the navbar */
 header {
   min-height: 10vh;
-  background-color: #7adfff;
+  background-color: #29CBFF;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,7 +50,7 @@ div.navigation-image-container > img{
 .nav-links {
   display: flex;
   justify-content: space-around;
-  margin: 25px 0px;
+  margin: 22px 0px 15px 0px;
   list-style: none;
 }
 
@@ -64,21 +66,91 @@ div.navigation-image-container > img{
   display: flex;
   justify-content: space-around;
   list-style: none;
-  margin: 20px 0px;
+  margin: 22px 0px 15px 0px;
   color: white;
 }
-
+.loginBtn{
+  padding: 7px 10px;
+  font-size: 13px;
+  margin-top: 0;
+  font-weight: 500;
+  border-radius: 7px;
+  border: 2px solid white;
+  color: #444444;
+  background-color: white;
+  box-shadow: #444444;
+}
+.count{
+  position: absolute;
+  top: 8px;
+  right: 425px;
+  font-size: 12px;
+  font-weight: bold;
+  color: red
+}
+.count2{
+  position: absolute;
+  top: 8px;
+  right: 331px;
+  font-size: 12px;
+  font-weight: bold;
+  color: red
+}
 .navigation-icons {
   flex: 2;
 }
 
+.search-box{
+  background: #29CBFF;
+  position: absolute;
+  top: 70px;
+  right: 20%;
+  width: 279px;
+  height: 53px;
+  line-height: 37px;
+   z-index: 1000;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-top:4px solid #29CBFF;
+  display: none;
+}
+
+.search-box:before{
+  content: "";
+  position: absolute;
+  top: -32px;
+  right: 13px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid #29CBFF;
+}
+
+.search-box input[type="text"]{
+  width: 200px;
+  padding: 6px 10px 0px 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+  border: 1px solid #29CBFF;
+  outline: none;
+}
+
+.search-box input[type="button"]{
+  width: 70px;
+  padding: 6px 0px;
+  background: #29CBFF;
+  color: #fff;
+  margin-left: -6px;
+  border: 1px solid #29CBFF;
+  outline: none;
+  cursor: pointer;
+}
 /* stop here and scroll to the bottom */
+
 /* breadcumb */
-.navigation{margin-top: 10px; margin-left: 10px;}
+/* .navigation{margin-top: 10px; margin-left: 10px;} */
 .li-1{text-decoration: none; color: #444444;}
 .li-2{color: #444444;}
-.underline{text-decoration: underline;}
-
+.underline{text-decoration: underline 2px solid #29CBFF;}
 
 body {
   max-width: 100%;
@@ -165,6 +237,18 @@ div.product-title {
   object-fit: cover;
 }
 
+#consoles {
+  display: none;
+}
+
+#accessories {
+  display: none;
+}
+
+#smartwatches {
+  display: none;
+}
+
 div.image-container2 > img {
   width: 100%;
   height: 300px;
@@ -216,8 +300,15 @@ div.image-contain2 > img {
 
 .btn-primary {
   position: absolute;
-  left: 40%;
+  left: 30%;
+  padding: 0 50px;
+  text-transform: uppercase;
+  font-size: 24px;
   bottom: 5px;
+}
+
+#buy-button{
+  padding: 10px 50px;
 }
 
 #shopping-cart {
@@ -239,32 +330,7 @@ div.image-contain2 > img {
   top: 50px;
 }
 
-#buy-button {
-  /* background-color: #7adfff;
-  border: 1px solid #7adfff; */
-  font-size: 24px;
-  text-transform: uppercase;
-}
 
-.two {
-  position: relative;
-}
-
-.three {
-  position: relative;
-}
-
-.four {
-  position: relative;
-}
-
-.five {
-  position: relative;
-}
-
-.six {
-  position: relative;
-}
 
 /* copy from here */
 footer {
@@ -290,8 +356,8 @@ footer-title {
 }
 
 p.footer-description {
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 600;
   font-family: "Josefin Sans", sans-serif;
 }
 
@@ -305,7 +371,7 @@ ul.footer-links {
 li.footer-links-item > a {
   text-decoration: none;
   color: whitesmoke;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .fa-home {
@@ -376,7 +442,7 @@ li.footer-links-item > a {
 }
 
 p.footer-description1 {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
   font-family: "Josefin Sans", sans-serif;
 }
@@ -391,9 +457,6 @@ p.footer-description1 {
   margin-top: 18px;
   color: #ffffff;
 }
-
-
-
 
 /* to here */
 

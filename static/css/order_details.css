@@ -84,7 +84,7 @@ div.navigation-image-container > img{
 .navigation{margin-top: 10px; margin-left: 10px;}
 .li-1{text-decoration: none; color: #444444;}
 .li-2{color: #444444;}
-.underline{text-decoration: underline;}
+.underline{text-decoration: underline 2px solid #29CBFF;}
 
 /* p{
 text-transform: capitalize;
