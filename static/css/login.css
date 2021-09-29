@@ -44,9 +44,6 @@ body{
 }
 .Path-flex > a > h3{text-transform: uppercase;}
 
-/* .Path-flex > h3 :active{
-  text-decoration: underline;
-} */
 .Login{
   display: flex;
   flex-direction: column;
@@ -75,13 +72,19 @@ body{
   max-width: 25rem;
   border-radius: 25px;
   background-color: #fff;
-
 }
 .input-container > input::placeholder {
   color: black;
   font-weight: 700;
   font-family: 'Josefin Sans', sans-serif;
   padding-left: 15px;
+}
+.input-container small{
+  position: absolute;
+  left: 4rem;
+  bottom: 4px;
+  margin-top: 10px;
+  visibility: hidden;
 }
 .group .check{
   float: left;
@@ -91,25 +94,50 @@ body{
   text-decoration: none;
   color: #000;
 }
-.Login input[type="submit"]{
-  width: 40%;
-  font-family: 'Josefin Sans', sans-serif;
-  margin: auto;
-  background-color: #7ADFFF;
-}
-.Login #Login{
-  width: 40%;
-  height: 3rem;
-  border-radius: 30px;
-  box-shadow:4px 4px 5px rgb(223, 213, 213);
-  border: 1px solid rgb(223, 213, 213);
 
-}
+
 .login-path{
-  text-decoration-color: #7ADFFF;
-  text-decoration-thickness: 5px;
-
+  color: #000;
 }
 .register-path{
   text-decoration: none;
+}
+
+/* BUTTON DESIGNS */
+
+.Login #Login{
+  position: relative;
+  width: 13rem;
+  height: 3rem;
+  border-radius: 25px;
+  box-shadow:4px 4px 5px rgb(223, 213, 213);
+  border: 1px solid rgb(223, 213, 213);
+  margin: auto;
+  background-color: #7ADFFF;
+  color: #fff;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+#Login i{
+  position: absolute;
+  left: 170px;
+}
+
+/* INPUT FOR SUUCESS AND ERROR CSS */
+/* .input-container.success input{
+  margin-bottom: 10px;
+}
+.input-container.success{
+  border: 2px solid green;
+} */
+.input-container.error{
+  border: 1.5px solid #ff0000;
+}
+.input-container.error small{
+  visibility: visible;
+  color: #ff0000;
+}
+.input-container.error input{
+  margin-bottom: 10px;
 }
