@@ -21,7 +21,6 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   padding: 50px;
 }
 .div-1{
@@ -36,14 +35,32 @@ body{
   padding: 30px;
   margin: 30px;
 }
-.Register > input{
+.input-container{
   padding: 15px;
   border-radius: 25px;
   border: 1px solid #ccc;
+  position: relative;
 }
-.Register > input::placeholder{
-  color: #000;
-  font-weight: 700;
+.input-container i{
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  font-size: 1.2rem;
+}
+.input-container small{
+  position: absolute;
+  bottom: 3px;
+  left: 3rem;
+  visibility: hidden;
+}
+.input-container > input{
+  outline: none;
+  border: none;
+  padding-left: 2rem;
+  /* padding-bottom: 10px; */
+}
+.input-container > input::placeholder{
+  color: #444;
   font-family: 'Josefin Sans', sans-serif;
 }
 .Path-flex{
@@ -56,12 +73,45 @@ body{
   text-transform: uppercase;
 }
 .Register > #Register{
-  width: 50%;
-  background-color: #7ADFFF;
+  position: relative;
+  background-color: red;
+  height: 3rem;
+  width: 13rem;
   margin: auto;
+  border-radius: 25px;
+  box-shadow:4px 4px 5px rgb(223, 213, 213);
+  border: 1px solid rgb(223, 213, 213);
+  background-color: #7ADFFF;
+  color: #fff;
+  font-weight: 800;
+  cursor: pointer;
+}
+#Register i{
+  position: absolute;
+  left: 150px;
+  bottom: 15px;
+
 }
 .LinkToSignIn > a{
   text-decoration: none;
   color: #000;
   font-weight: 800;
+}
+
+/* CSS ERROR MESSAGE DESIGN */
+.input-container.error > input{
+  padding-bottom: 10px;
+}
+.input-container.error small{
+  visibility: visible;
+  color: #ff0000;
+  font-size: 13px;
+}
+.input-container.error{
+  border: 1px solid #ff0000;
+}
+
+/* SUCCESS MESSAGE */
+.input-container.success{
+  border: 1px solid #008000;
 }

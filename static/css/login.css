@@ -28,7 +28,7 @@ body{
 .div-1{
   background: #fff;
   width: 100%;
-  max-width: 30rem;
+  max-width: 20rem;
   height: 100%;
   max-height: 25rem ;
  
@@ -62,20 +62,19 @@ body{
   left: 14px;
   top: 12px;
   font-size: 1.3rem;
+  color: #444444;
 }
 .input-container > input{
   border: none;
   padding: 15px;
   outline: none;
   margin-left: 2rem;
-  width: 100%;
   max-width: 25rem;
   border-radius: 25px;
   background-color: #fff;
 }
 .input-container > input::placeholder {
-  color: black;
-  font-weight: 700;
+  color: #444444;
   font-family: 'Josefin Sans', sans-serif;
   padding-left: 15px;
 }
@@ -121,16 +120,13 @@ body{
 
 #Login i{
   position: absolute;
-  left: 170px;
+  left: 150px;
+  bottom: 15px;
+  color: #fff;
 }
 
-/* INPUT FOR SUUCESS AND ERROR CSS */
-/* .input-container.success input{
-  margin-bottom: 10px;
-}
-.input-container.success{
-  border: 2px solid green;
-} */
+/* DESIGN FOR ERROR MESSAGE */
+
 .input-container.error{
   border: 1.5px solid #ff0000;
 }
@@ -140,4 +136,9 @@ body{
 }
 .input-container.error input{
   margin-bottom: 10px;
+}
+
+/* SUCCESS MESSAGE */
+.input-container.success{
+  border: 1px solid #008000;
 }
