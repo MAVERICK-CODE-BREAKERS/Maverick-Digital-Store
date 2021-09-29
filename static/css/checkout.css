@@ -78,7 +78,7 @@ div.navigation-image-container > img{
 /* .navigation{margin-top: 10px; margin-left: 10px;} */
 .li-1{text-decoration: none; color: #444444;}
 .li-2{color: #444444;}
-.underline{text-decoration: underline;} 
+.underline{text-decoration: underline 2px solid #29CBFF;}
 
 
 /* main section of the page*/
@@ -205,9 +205,13 @@ p.footer-description1 {
 .fa-envelope {
   color: #0a1c22;
 }
-.copy{
+.copy{ 
   margin-top: 18px;
   color: #ffffff;
+}
+
+.Submit-Mail{
+  border: none;
 }
 
 
@@ -216,7 +220,7 @@ p.footer-description1 {
 /* to here */
 
 
-/* copy from here for responsiveness */
+/* copy from here for responsiveness of nav bar */
 @media screen and (max-width: 768px) {
   #navigation.navigation-category-content {
     display: none;

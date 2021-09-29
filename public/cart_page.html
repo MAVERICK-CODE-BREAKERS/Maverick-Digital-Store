@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../static/css/cart_page.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <title>MDS | Cart</title>
+</head>
+<body>
+   <!-- copy from here -->
+    <!-- navbar -->
+    <main>
+      <!-- header opening tag -->
+      <header>
+        <!-- navigation opening tag -->
+        <nav class="navigation-contents">
+          <!-- navbar brand opening tag -->
+          <div class="navbar-brand-container">
+            <div class="navigation-image-container">
+              <img src="../static/img/maverick_logo.png" alt="" />
+            </div>
+            <div class="navigation-item-container1">
+              <img
+                src="../static/img/icon-hamburger.png"
+                class="hamburger"
+                alt=""
+                id="nav-bar-icon"
+              />
+            </div>
+          </div>
+          <!-- closing tag for navbar brand -->
+          <!-- opening tag for navigation-category-content -->
+          <div class="navigation-category-content" id="navigation">
+            <ul class="nav-links">
+               <li class="nav-links-item"><a href="../public/product_category.html">CONSOLES</a></li>
+              <li class="nav-links-item"><a href="../public/product_category.html">LAPTOPS</a></li>
+              <li class="nav-links-item"><a href="../public/product_category.html">WATCHES</a></li>
+              <li class="nav-links-item"><a href="../public/product_category.html">ACCESSORIES</a></li>
+            </ul>
+          </div>
+          <!-- closing tag for navigation category -->
+          <!-- opening tag for navigation icons -->
+          <div class="navigation-icons" id="navigation1">
+            <ul class="icon-links">
+              <li class="icon-links-item" >
+                <a href="/public/wishlist.html"><i class="fa fa-heart" style="font-size: 23px"></i>
+                <div id="wish">
+                  
+                </div>
+                </a>
+              </li>
+              <li class="icon-links-item">
+                <a href="/public/cart_page.html"><i class="fa fa-shopping-cart" style="font-size: 23px"></i>
+                 <div id="cart">
+                 
+                </div>
+                </a>
+              </li>
+              <li class="icon-links-item active">
+                <i class="fa fa-search" aria-hidden="true" style="font-size: 23px"></i>
+                <div class="search-box">
+                  <input type="text" class="text" placeholder=""/>
+                  <input type="button" value="Search"/>
+  		          </div>
+              </li>
+              <li class="icon-links-item">
+                <a href="/public/register.html"><button type="button" class="loginBtn">
+                  LOGIN/REGISTER
+                </button></a>
+              </li>
+            </ul>
+          </div>
+          <!-- closing tag for navigation-icons -->
+        </nav>
+        <!-- closing tag for navigation -->
+      </header>
+      <!-- to here for the navbar. head to the css -->
+
+       <div class="navigation mt-3 pl-5">
+            <p><a href="/index.html" class="li-1">Home</a> > <a href="#" class="li-2"><span class="underline">Cart</span></a></p>
+        </div>
+
+    <h3 style="margin: 20px; margin-left: 220px"> <strong>Cart</strong> </h3>
+    <section id="Cartbuy" >
+         <br><br><br>
+        <div id="right">
+          <table class="table" style="text-align: center;">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Product</th>
+                <th></th>
+                <th scope="col">Price</th>
+                <th scope="col">Quality</th>
+                <th scope="col">Sub-Total</th>
+              </tr>
+            </thead>
+
+          
+            <tbody>
+              <tr>
+                <th scope="row">x</th>
+                <td><input type="image" src='./../static/img/Dell.png' width="80" height="80" style="border-radius: 10px;"> </td>
+                <td>Product A</td>
+                <td>N4,000</td>
+                <td><button style="background-color: white; ">-  1  +</button></td>
+                <td>N4,000</td>
+              </tr>
+              <tr>
+                <th scope="row">x</th>
+                <td> <input type="image" src='./../static/img/dvd.png' width="80" height="80" style="border-radius: 10px;"> </td>
+                <td>Product A</td>
+                <td>N4,000</td>
+                <td><button style="background-color: white; ">-  1  +</button></td>
+                <td>N4,000</td>
+              </tr>
+              <tr>
+                <th scope="row">x</th>
+                <td> <input type="image" src='./../static/img/battery.png' width="80" height="80" style="border-radius: 10px;">  </td>
+                <td>Product A</td>
+                <td>N4,000</td>
+                <td><button style="background-color: white; "> -  1  + </button></td>
+                <td>N4,000</td>
+              </tr>
+            </tbody>
+          </table>
+          <div id="button">
+            <button id="btn1">Have a Coupon Code?</button> 
+            <button class="btn2"> <strong>Apply Coupon</strong> </button>
+            <button id="btn3"> <strong> Update Cart</strong> </button>
+          </div>
+            
+        </div>
+
+        <div id="left">
+          <div class="checkout">
+
+          Cart Totals <br> <br> <br>
+          <span class="left">Sub-total </span>   <span class="right">N12,000</span> <br>
+          <hr>
+          <strong>Shipping</strong>   <br>
+          Flat Rate: N1,000<br>
+          Shipping to 21 MDS Estate, Abuja    <br>
+          <a href="#">Change Address</a>  <hr>
+
+          <strong class="left">Total</strong> <strong class="right">N13,000</strong> <br><br>
+          <button class="btn2"> <strong> Proceed to Checkout</strong>  </button>
+
+          </div class="checkout"> <br>
+
+          <button class="btn2" style="margin-left: 15rem;" > <strong> Continue Shopping</strong> </button>
+            
+        </div>
+
+    </section>
+
+      <footer>
+      <div class="footer-contents">
+        <div class="contact-us-container">
+          <h3 class="footer-title mt-4">Contact Us:</h3>
+
+          <p class="footer-description mt-4">
+            <span> <i class="fa fa-home"></i></span> 28B,Unity Crescent, 
+            Ikeja GRA,Lagos
+          </p>
+          <p class="footer-description">
+            <span><i class="fa fa-envelope" id="envelope"></i></span
+            >info@mds.com
+          </p>
+          <p class="footer-description">
+            <span><i class="fa fa-phone mr-3"></i></span>08033445566
+          </p>
+        </div>
+
+        <div class="useful-links-container">
+          <h3 class="footer-title mt-4">Useful Links:</h3>
+
+          <ul class="footer-links">
+            <li class="footer-links-item">
+              <a href=""> <span>&#62;</span> Home </a>
+            </li>
+            <li class="footer-links-item">
+              <a href=""> <span>&#62;</span> About Us </a>
+            </li>
+            <li class="footer-links-item">
+              <a href=""> <span>&#62;</span> Products </a>
+            </li>
+            <li class="footer-links-item">
+              <a href=""> <span>&#62;</span> Wishlist </a>
+            </li>
+            <li class="footer-links-item">
+              <a href=""> <span>&#62;</span> Cart </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="social-media-container">
+          <div class="social-media-contents mt-4">
+            <h3 class="footer-title">Social Media</h3>
+            <a href="#" class="fa fa-twitter" id="twitter"></a>
+            <a href="#" class="fa fa-facebook" id="facebook"></a>
+            <a href="#" class="fa fa-instagram" id="instagram"></a>
+          </div>
+        </div>
+
+        <div class="subscribe-container">
+          <p class="footer-description1 mt-4">
+            Subscribe To Our Newsletter <br />
+            To Stay Up-To-Date
+            With Latest Products.
+          </p>
+
+          <div class="col-9" id="form-container">
+            <div class="input-group">
+              <div class="input-group-prepend"></div>
+              <input
+                type="text"
+                class="form-control"
+                id="inlineFormInputGroupUsername"
+                placeholder="Email"
+              />
+              <div class="input-group-text"><i class="fa fa-envelope"></i></div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="">
+        <div class="text-center copy mt-4">
+                 <hr>
+                  Copyright &copy; 2021 MDS. All Rights Reserved.
+                </div>
+            
+              </div>
+    </footer>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="../static/js/nav.js"></script>
+    
+</body>
+</html>

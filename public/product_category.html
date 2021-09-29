@@ -8,6 +8,8 @@
       type="text/css"
       href="../static/css/product_category.css"
     />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -23,10 +25,10 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <title>Product Category</title>
+    <title>MDS | Product Category</title>
   </head>
   <body>
-    <!-- copy from here -->
+     <!-- copy from here -->
     <!-- navbar -->
     <main>
       <!-- header opening tag -->
@@ -40,7 +42,7 @@
             </div>
             <div class="navigation-item-container1">
               <img
-                src="../static/img/icon-hamburger.svg"
+                src="../static/img/icon-hamburger.png"
                 class="hamburger"
                 alt=""
                 id="nav-bar-icon"
@@ -51,9 +53,10 @@
           <!-- opening tag for navigation-category-content -->
           <div class="navigation-category-content" id="navigation">
             <ul class="nav-links">
-              <li class="nav-links-item"><a href="">CONSOLES</a></li>
-              <li class="nav-links-item"><a href="">WATCHES</a></li>
-              <li class="nav-links-item"><a href="">ACCESORIES</a></li>
+               <li class="nav-links-item"><a href="../public/product_category.html">CONSOLES</a></li>
+              <li class="nav-links-item"><a href="../public/product_category.html">LAPTOPS</a></li>
+              <li class="nav-links-item"><a href="../public/product_category.html">WATCHES</a></li>
+              <li class="nav-links-item"><a href="../public/product_category.html">ACCESSORIES</a></li>
             </ul>
           </div>
           <!-- closing tag for navigation category -->
@@ -61,16 +64,26 @@
           <div class="navigation-icons" id="navigation1">
             <ul class="icon-links">
               <li class="icon-links-item" >
-                <i class="fa fa-heart" style="font-size: 36px"></i>
+                <i class="fa fa-heart" style="font-size: 23px"></i>
+                <div id="wish">
+                  <!-- <p class="count"> 0</p> -->
+                </div>
               </li>
               <li class="icon-links-item">
-                <i class="fa fa-shopping-cart" style="font-size: 36px"></i>
+                <i class="fa fa-shopping-cart" style="font-size: 23px"></i>
+                 <div id="cart">
+                  <!-- <p class="count2"> 0</p> -->
+                </div>
+              </li>
+              <li class="icon-links-item active">
+                <i class="fa fa-search" aria-hidden="true" style="font-size: 23px"></i>
+                <div class="search-box">
+                  <input type="text" class="text" placeholder=""/>
+                  <input type="button" value="Search"/>
+  		          </div>
               </li>
               <li class="icon-links-item">
-                <i class="fa fa-search" style="font-size: 36px"></i>
-              </li>
-              <li class="icon-links-item">
-                <button type="button" class="btn btn-light">
+                <button type="button" class="loginBtn">
                   LOGIN/REGISTER
                 </button>
               </li>
@@ -81,18 +94,16 @@
         <!-- closing tag for navigation -->
       </header>
       <!-- to here for the navbar. head to the css -->
-
-       <div class="navigation mt-3 pl-5">
+      <div class="navigation mt-3 pl-5">
             <p><a href="/index.html" class="li-1">Home</a> > <a href="#" class="li-2"><span class="underline">Products</span></a></p>
         </div>
-
       <div class="banner-image-container my-5">
-        <img
-          src="../static/img/Banner.png"
+        <a href="../public/installment.html"><img
+          src="../static/img/Banner.jpg"
           class="img-thumbnail"
           style="background-color: #e5e5e5"
           alt=""
-        />
+        /></a>
       </div>
       <!-- opening tag of tabs-section -->
       <section class="tabs-section">
@@ -102,41 +113,139 @@
             <h3 class="title">FILTER</h3>
             <h4 class="filter-description">Categories</h4>
             <!-- opening tag for filter section for brands of laptops -->
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="flexCheckDefault"
-              />
-              <label class="form-check-label" for="flexCheckDefault">
-                Apple
-              </label>
+            <div id="laptop">
+              <div class="form-check" id="laptop">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Apple
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="hpCheckbox"
+                />
+                <label class="form-check-label" for="appleCheckbox"> HP </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="dellCheckbox"
+                />
+                <label class="form-check-label" for="dellCheckbox">
+                  Dell
+                </label>
+              </div>
             </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="flexCheckChecked"
-                checked
-              />
-              <label class="form-check-label" for="flexCheckChecked">
-                HP
-              </label>
+            <!-- form checkbox for consoles -->
+            <div id="consoles">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault1"
+                />
+                <label class="form-check-label" for="flexCheckDefault1">
+                  PlayStation
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="xboxCheckbox"
+                />
+                <label class="form-check-label" for="xboxCheckbox">
+                  XBOX
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="nintendoCheckbox"
+                />
+                <label class="form-check-label" for="nintendoCheckbox">
+                  Nintendo Switch
+                </label>
+              </div>
             </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="flexCheckChecked"
-                checked
-              />
-              <label class="form-check-label" for="flexCheckChecked">
-                Dell
-              </label>
+            <!-- form check for consoles -->
+            <!-- form checkbox for accessories -->
+            <div id="accessories">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault1"
+                />
+                <label class="form-check-label" for="flexCheckDefault1">
+                  PowerBanks
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="speakerCheckbox"
+                />
+                <label class="form-check-label" for="speakerCheckbox">
+                  Speakers
+                </label>
+              </div>
             </div>
+            <!-- form check for consoles -->
+            <!-- form checkbox for accessories -->
+            <div id="smartwatches">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault2"
+                />
+                <label class="form-check-label" for="flexCheckDefault2">
+                  Apple
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="huaweiCheckbox"
+                />
+                <label class="form-check-label" for="huaweiCheckbox">
+                  Huawei
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="samsungCheckbox"
+                />
+                <label class="form-check-label" for="samsungCheckbox">
+                  Samsung
+                </label>
+              </div>
+            </div>
+            <!-- form check for consoles -->
             <h3 class="title1 mt-4 mb-2">Prices</h3>
             <div class="price-input-container mt-2 mb-4">
               <form>
@@ -233,6 +342,7 @@
                     role="tab"
                     aria-controls="nav-home"
                     aria-selected="true"
+                    onclick="displayCheckboxLaptops()"
                   >
                     Laptop
                   </button>
@@ -245,6 +355,7 @@
                     role="tab"
                     aria-controls="nav-profile"
                     aria-selected="false"
+                    onclick="displayCheckboxWatches()"
                   >
                     Watches
                   </button>
@@ -255,6 +366,7 @@
                     data-bs-target="#nav-contact"
                     type="button"
                     role="tab"
+                    onclick="displayCheckboxConsoles()"
                     aria-controls="nav-contact"
                     aria-selected="false"
                   >
@@ -262,13 +374,14 @@
                   </button>
                   <button
                     class="nav-link"
-                    id="nav-contact-tab"
+                    id="nav-contact1-tab"
                     data-bs-toggle="tab"
-                    data-bs-target="#nav-contact"
+                    data-bs-target="#nav-contact1"
                     type="button"
                     role="tab"
-                    aria-controls="nav-contact"
+                    aria-controls="nav-contact1"
                     aria-selected="false"
+                    onclick=" displayCheckboxAccessories()"
                   >
                     Accessories
                   </button>
@@ -284,7 +397,7 @@
                 aria-labelledby="nav-home-tab"
               >
                 <div class="container-for-grid">
-                  <div class="one">
+                  <div class="Apple" id="one">
                     <div class="image-contain2 my-4">
                       <img
                         src="../static/img/Apple-Macbook-laptop-sales.png"
@@ -325,7 +438,7 @@
                     </div>
                   </div>
 
-                  <div class="two">
+                  <div class="Apple" id="two">
                     <div class="image-contain3 my-4">
                       <img
                         src="../static/img/Black-apple-macbook.png"
@@ -365,7 +478,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="three">
+                  <div class="Apple" id="three">
                     <div class="image-container2 my-4">
                       <img
                         src="../static/img/Open-Apple-Macbook-laptop-sales.png"
@@ -405,7 +518,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="four">
+                  <div class="Dell" id="four">
                     <div class="image-container1 my-4">
                       <img
                         src="../static/img/Flex-laptop.png"
@@ -445,7 +558,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="five">
+                  <div class="Dell" id="five">
                     <div class="image-container1 my-4">
                       <img
                         src="../static/img/dell-laptop.png"
@@ -485,7 +598,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="six">
+                  <div class="HP" id="six">
                     <div class="image-container1 my-4">
                       <img
                         src="../static/img/HP-Sale-laptop-sales.png"
@@ -527,21 +640,508 @@
                   </div>
                 </div>
               </div>
+
               <div
                 class="tab-pane fade"
                 id="nav-profile"
                 role="tabpanel"
                 aria-labelledby="nav-profile-tab"
               >
-                ...
+                            <div class="container-for-grid">
+                  <div class="AppleWatches" id="one">
+                    <div class="image-contain2 my-4">
+                      <img
+                        src="../static/img/SmartWatches/Apple-min-removebg-preview.png"
+                        class="img-thumbnail"
+                        alt=""
+                        style="background-color: #e5e5e5"
+                      />
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        id="buy-button"
+                      >
+                        Buy
+                      </button>
+                      <i
+                        class="fa fa-shopping-cart"
+                        id="shopping-cart"
+                        style="font-size: 24px"
+                      ></i>
+                      <i
+                        class="fa fa-heart"
+                        style="font-size: 24px"
+                        id="heart"
+                      ></i>
+                    </div>
+                    <div class="product-title">
+                      <div class="product-name">
+                        <h3>Product C</h3>
+                      </div>
+                      <div class="product-price">
+                        <h3 class="price-description1">#8,000</h3>
+                      </div>
+                    </div>
+                    <div class="product-description-container">
+                      <p class="product-description1">
+                        A Very Rugged And Useful Laptop For...
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="AppleWatches" id="two">
+                    <div class="image-contain3 my-4">
+                      <img
+                        src="../static/img/SmartWatches/Yellow_SmartWatch-min-removebg-preview.png"
+                        class="img-thumbnail"
+                        alt=""
+                        style="background-color: #e5e5e5"
+                      />
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        id="buy-button"
+                      >
+                        Buy
+                      </button>
+                      <i
+                        class="fa fa-shopping-cart"
+                        id="shopping-cart"
+                        style="font-size: 24px"
+                      ></i>
+                      <i
+                        class="fa fa-heart"
+                        style="font-size: 24px"
+                        id="heart"
+                      ></i>
+                    </div>
+                    <div class="product-title">
+                      <div class="product-name">
+                        <h3>Product C</h3>
+                      </div>
+                      <div class="product-price">
+                        <h3 class="price-description1">#8,000</h3>
+                      </div>
+                    </div>
+                    <div class="product-description-container">
+                      <p class="product-description1">
+                        A Very Rugged And Useful Laptop For...
+                      </p>
+                    </div>
+                  </div>
+                  <div class="Huawei" id="three">
+                    <div class="image-container2 my-4">
+                      <img
+                        src="../static/img/SmartWatches/filip-baotic-FF8Kqb86V38-unsplash-min-removebg-preview.png"
+                        class="img-thumbnail"
+                        alt=""
+                        style="background-color: #e5e5e5"
+                      />
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        id="buy-button"
+                      >
+                        Buy
+                      </button>
+                      <i
+                        class="fa fa-shopping-cart"
+                        id="shopping-cart"
+                        style="font-size: 24px"
+                      ></i>
+                      <i
+                        class="fa fa-heart"
+                        style="font-size: 24px"
+                        id="heart"
+                      ></i>
+                    </div>
+                    <div class="product-title">
+                      <div class="product-name">
+                        <h3>Product C</h3>
+                      </div>
+                      <div class="product-price">
+                        <h3 class="price-description1">#8,000</h3>
+                      </div>
+                    </div>
+                    <div class="product-description-container">
+                      <p class="product-description1">
+                        A Very Rugged And Useful Laptop For...
+                      </p>
+                    </div>
+                  </div>
+                  <div class="Samsung" id="four">
+                    <div class="image-container1 my-4">
+                      <img
+                        src="../static/img/SmartWatches/Samsung-min-removebg-preview.png"
+                        class="img-thumbnail img-responsive"
+                        alt=""
+                        style="background-color: #e5e5e5"
+                      />
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        id="buy-button"
+                      >
+                        Buy
+                      </button>
+                      <i
+                        class="fa fa-shopping-cart"
+                        id="shopping-cart"
+                        style="font-size: 24px"
+                      ></i>
+                      <i
+                        class="fa fa-heart"
+                        style="font-size: 24px"
+                        id="heart"
+                      ></i>
+                    </div>
+                    <div class="product-title">
+                      <div class="product-name">
+                        <h3>Product C</h3>
+                      </div>
+                      <div class="product-price">
+                        <h3 class="price-description1">#8,000</h3>
+                      </div>
+                    </div>
+                    <div class="product-description-container">
+                      <p class="product-description1">
+                        A Very Rugged And Useful Laptop For...
+                      </p>
+                    </div>
+                  </div>
+                  <div class="AppleWatches" id="five">
+                    <div class="image-container1 my-4">
+                      <img
+                        src="../static/img/SmartWatches/Apple1-min-removebg-preview.png"
+                        class="img-thumbnail img-responsive"
+                        alt=""
+                        style="background-color: #e5e5e5"
+                      />
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        id="buy-button"
+                      >
+                        Buy
+                      </button>
+                      <i
+                        class="fa fa-shopping-cart"
+                        id="shopping-cart"
+                        style="font-size: 24px"
+                      ></i>
+                      <i
+                        class="fa fa-heart"
+                        style="font-size: 24px"
+                        id="heart"
+                      ></i>
+                    </div>
+                    <div class="product-title">
+                      <div class="product-name">
+                        <h3>Product C</h3>
+                      </div>
+                      <div class="product-price">
+                        <h3 class="price-description1">#8,000</h3>
+                      </div>
+                    </div>
+                    <div class="product-description-container">
+                      <p class="product-description1">
+                        A Very Rugged And Useful Laptop For...
+                      </p>
+                    </div>
+                  </div>
+                  <div class="Huawei" id="six">
+                    <div class="image-container1 my-4">
+                      <img
+                        src="../static/img/SmartWatches/Huawei-min-removebg-preview.png"
+                        class="img-thumbnail"
+                        alt=""
+                        style="background-color: #e5e5e5"
+                      />
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        id="buy-button"
+                      >
+                        Buy
+                      </button>
+                      <i
+                        class="fa fa-shopping-cart"
+                        id="shopping-cart"
+                        style="font-size: 24px"
+                      ></i>
+                      <i
+                        class="fa fa-heart"
+                        style="font-size: 24px"
+                        id="heart"
+                      ></i>
+                    </div>
+                    <div class="product-title">
+                      <div class="product-name">
+                        <h3>Product C</h3>
+                      </div>
+                      <div class="product-price">
+                        <h3 class="price-description1">#8,000</h3>
+                      </div>
+                    </div>
+                    <div class="product-description-container">
+                      <p class="product-description1">
+                        A Very Rugged And Useful Laptop For...
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
+
+              <!-- console display -->
               <div
                 class="tab-pane fade"
                 id="nav-contact"
                 role="tabpanel"
                 aria-labelledby="nav-contact-tab"
               >
-                ...
+                <div class="container-for-grid">
+                  <div class="playstation" id="one">
+                    <div class="image-contain2 my-4">
+                      <img
+                        src="../static/img/Consoles/PS4-min-removebg-preview.png"
+                        class="img-thumbnail"
+                        alt=""
+                        style="background-color: #e5e5e5"
+                      />
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        id="buy-button"
+                      >
+                        Buy
+                      </button>
+                      <i
+                        class="fa fa-shopping-cart"
+                        id="shopping-cart"
+                        style="font-size: 24px"
+                      ></i>
+                      <i
+                        class="fa fa-heart"
+                        style="font-size: 24px"
+                        id="heart"
+                      ></i>
+                    </div>
+                    <div class="product-title">
+                      <div class="product-name">
+                        <h3>Product C</h3>
+                      </div>
+                      <div class="product-price">
+                        <h3 class="price-description1">#8,000</h3>
+                      </div>
+                    </div>
+                    <div class="product-description-container">
+                      <p class="product-description1">
+                        A Very Rugged And Useful Laptop For...
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="nintendo" id="two">
+                    <div class="image-contain3 my-4">
+                      <img
+                        src="../static/img/Consoles/Nintendo-min-removebg-preview.png"
+                        class="img-thumbnail"
+                        alt=""
+                        style="background-color: #e5e5e5"
+                      />
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        id="buy-button"
+                      >
+                        Buy
+                      </button>
+                      <i
+                        class="fa fa-shopping-cart"
+                        id="shopping-cart"
+                        style="font-size: 24px"
+                      ></i>
+                      <i
+                        class="fa fa-heart"
+                        style="font-size: 24px"
+                        id="heart"
+                      ></i>
+                    </div>
+                    <div class="product-title">
+                      <div class="product-name">
+                        <h3>Product C</h3>
+                      </div>
+                      <div class="product-price">
+                        <h3 class="price-description1">#8,000</h3>
+                      </div>
+                    </div>
+                    <div class="product-description-container">
+                      <p class="product-description1">
+                        A Very Rugged And Useful Laptop For...
+                      </p>
+                    </div>
+                  </div>
+                  <div class="playstation" id="three">
+                    <div class="image-container2 my-4">
+                      <img
+                        src="../static/img/Consoles/PS5-min__1_-removebg-preview.png"
+                        class="img-thumbnail"
+                        alt=""
+                        style="background-color: #e5e5e5"
+                      />
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        id="buy-button"
+                      >
+                        Buy
+                      </button>
+                      <i
+                        class="fa fa-shopping-cart"
+                        id="shopping-cart"
+                        style="font-size: 24px"
+                      ></i>
+                      <i
+                        class="fa fa-heart"
+                        style="font-size: 24px"
+                        id="heart"
+                      ></i>
+                    </div>
+                    <div class="product-title">
+                      <div class="product-name">
+                        <h3>Product C</h3>
+                      </div>
+                      <div class="product-price">
+                        <h3 class="price-description1">#8,000</h3>
+                      </div>
+                    </div>
+                    <div class="product-description-container">
+                      <p class="product-description1">
+                        A Very Rugged And Useful Laptop For...
+                      </p>
+                    </div>
+                  </div>
+                  <div class="nintendo" id="four">
+                    <div class="image-container1 my-4">
+                      <img
+                        src="../static/img/Consoles/mike-meyers-vyFA3R96RA4-unsplash-min-removebg-preview.png"
+                        class="img-thumbnail img-responsive"
+                        alt=""
+                        style="background-color: #e5e5e5"
+                      />
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        id="buy-button"
+                      >
+                        Buy
+                      </button>
+                      <i
+                        class="fa fa-shopping-cart"
+                        id="shopping-cart"
+                        style="font-size: 24px"
+                      ></i>
+                      <i
+                        class="fa fa-heart"
+                        style="font-size: 24px"
+                        id="heart"
+                      ></i>
+                    </div>
+                    <div class="product-title">
+                      <div class="product-name">
+                        <h3>Product C</h3>
+                      </div>
+                      <div class="product-price">
+                        <h3 class="price-description1">#8,000</h3>
+                      </div>
+                    </div>
+                    <div class="product-description-container">
+                      <p class="product-description1">
+                        A Very Rugged And Useful Laptop For...
+                      </p>
+                    </div>
+                  </div>
+                  <div class="xbox" id="five">
+                    <div class="image-container1 my-4">
+                      <img
+                        src="../static/img/Consoles/Xbox-removebg-preview.png"
+                        class="img-thumbnail img-responsive"
+                        alt=""
+                        style="background-color: #e5e5e5"
+                      />
+                      <button
+                        type="button"
+                        class="btn btn-primary btn-lg"
+                        id="buy-button"
+                      >
+                        Buy
+                      </button>
+                      <i
+                        class="fa fa-shopping-cart"
+                        id="shopping-cart"
+                        style="font-size: 24px"
+                      ></i>
+                      <i
+                        class="fa fa-heart"
+                        style="font-size: 24px"
+                        id="heart"
+                      ></i>
+                    </div>
+                    <div class="product-title">
+                      <div class="product-name">
+                        <h3>Product C</h3>
+                      </div>
+                      <div class="product-price">
+                        <h3 class="price-description1">#8,000</h3>
+                      </div>
+                    </div>
+                    <div class="product-description-container">
+                      <p class="product-description1">
+                        A Very Rugged And Useful Laptop For...
+                      </p>
+                    </div>
+                  </div>
+                  <div class="playstation" id="six">
+                    <div class="image-container1 my-4">
+                      <img
+                        src="../static/img/Consoles/batu-gezer-1HcNgs3RrKE-unsplash-min-removebg-preview.png"
+                        class="img-thumbnail"
+                        alt=""
+                        style="background-color: #e5e5e5"
+                      />
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        id="buy-button"
+                      >
+                        Buy
+                      </button>
+                      <i
+                        class="fa fa-shopping-cart"
+                        id="shopping-cart"
+                        style="font-size: 24px"
+                      ></i>
+                      <i
+                        class="fa fa-heart"
+                        style="font-size: 24px"
+                        id="heart"
+                      ></i>
+                    </div>
+                    <div class="product-title">
+                      <div class="product-name">
+                        <h3>Product C</h3>
+                      </div>
+                      <div class="product-price">
+                        <h3 class="price-description1">#8,000</h3>
+                      </div>
+                    </div>
+                    <div class="product-description-container">
+                      <p class="product-description1">
+                        A Very Rugged And Useful Laptop For...
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </nav>
@@ -549,8 +1149,8 @@
       </section>
     </main>
 
-     
-   <footer>
+
+      <footer>
       <div class="footer-contents">
         <div class="contact-us-container">
           <h3 class="footer-title mt-4">Contact Us:</h3>
@@ -602,7 +1202,7 @@
         <div class="subscribe-container">
           <p class="footer-description1 mt-4">
             Subscribe To Our Newsletter <br />
-            To Stay Up-To-Date <br />
+            To Stay Up-To-Date
             With Latest Products.
           </p>
 
@@ -622,13 +1222,16 @@
         
       </div>
       <div class="">
-        <div class="text-center copy">
-                 
+        <div class="text-center copy mt-4">
+                 <hr>
                   Copyright &copy; 2021 MDS. All Rights Reserved.
                 </div>
             
               </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../static/js/nav.js"></script>
     <script src="../static/js/index.js"></script>
   </body>
 </html>
