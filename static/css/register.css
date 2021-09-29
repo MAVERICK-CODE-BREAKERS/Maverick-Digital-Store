@@ -6,9 +6,10 @@
   box-sizing: border-box;
 }
 /* breadcumb */
-.li-1{text-decoration: none; color: #444444;}
-.li-2{color: #444444;}
-.underline{text-decoration: underline;} 
+.li-1{text-decoration: none; color: #ffffff;}
+.li-2{color: #ffffff;}
+.underline{text-decoration: underline ;}
+.navigation{color: white; margin: 20px;} 
 
 
 body{

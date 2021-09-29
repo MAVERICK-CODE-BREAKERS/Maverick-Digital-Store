@@ -1,347 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
+<head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Maverick-Digital-Store | Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../static/css/index.css">
+     <link rel="icon" href="static/img/logo.png">
+     
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Bootstrap -->
-    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="static/css/animate.css">
-    <link rel="stylesheet" href="static/css/animate.min.css"> -->
-    <link rel="stylesheet" href="static/css/font-awesome.min.css">
-    <link rel="stylesheet" href="static/css/index.css">
-    <link rel="icon" href="static/img/logo.png">
-
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <nav class="navbar bg_blue">
-    <div class="container">
-        <div class="">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#"><img src="static/img/maverick_logo.png" alt=""></a>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <title>MDS | Home-Page</title>
+</head>
+<body>
+    <!-- copy from here -->
+    <!-- navbar -->
+    <main>
+      <!-- header opening tag -->
+      <header>
+        <!-- navigation opening tag -->
+        <nav class="navigation-contents">
+          <!-- navbar brand opening tag -->
+          <div class="navbar-brand-container">
+            <div class="navigation-image-container">
+              <img src="../static/img/maverick_logo.png" alt="" />
+            </div>
+            <div class="navigation-item-container1">
+              <img
+                src="../static/img/icon-hamburger.png"
+                class="hamburger"
+                alt=""
+                id="nav-bar-icon"
+              />
+            </div>
           </div>
-          <ul class="nav navbar-nav ">
-            <li ><a href="#" class="white">CONSOLES </a></li>
-            <li><a href="#" class="white">LAPTOPS</a></li>
-            <li><a href="#" class="white">WATCHES</a></li>
-            <li><a href="#" class="white">ACCCESSORIES</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><span class="fa fa-heart white"></span> </a></li>
-            <li><a href="#"><span class="fa fa-cart-plus white"></span> </a></li>
-            <li><a href="#"><span class="fa fa-search white"></span> </a></li>
-            <li><a href="#" class="bg_white left_radius active"><span class=" bg_white "></span> SIGN IN </a></li>
-            <li><a href="#" class="bg_white right_radius"><span ></span>SIGN UP </a></li>
-            
+          <!-- closing tag for navbar brand -->
+          <!-- opening tag for navigation-category-content -->
+          <div class="navigation-category-content" id="navigation">
+            <ul class="nav-links">
+               <li class="nav-links-item"><a href="../public/product_category.html">CONSOLES</a></li>
+              <li class="nav-links-item"><a href="../public/product_category.html">LAPTOPS</a></li>
+              <li class="nav-links-item"><a href="../public/product_category.html">WATCHES</a></li>
+              <li class="nav-links-item"><a href="../public/product_category.html">ACCESSORIES</a></li>
+            </ul>
+          </div>
+          <!-- closing tag for navigation category -->
+          <!-- opening tag for navigation icons -->
+          <div class="navigation-icons" id="navigation1">
+            <ul class="icon-links">
+              <li class="icon-links-item" >
+                <a href="/public/wishlist.html"><i class="fa fa-heart" style="font-size: 23px"></i>
+                <div id="wish">
+                  
+                </div>
+                </a>
+              </li>
+              <li class="icon-links-item">
+                <a href="/public/cart_page.html"><i class="fa fa-shopping-cart" style="font-size: 23px"></i>
+                 <div id="cart">
+                 
+                </div>
+                </a>
+              </li>
+              <li class="icon-links-item active">
+                <i class="fa fa-search" aria-hidden="true" style="font-size: 23px"></i>
+                <div class="search-box">
+                  <input type="text" class="text" placeholder=""/>
+                  <input type="button" value="Search"/>
+  		          </div>
+              </li>
+              <li class="icon-links-item">
+                <a href="/public/register.html"><button type="button" class="loginBtn">
+                  LOGIN/REGISTER
+                </button></a>
+              </li>
+            </ul>
+          </div>
+          <!-- closing tag for navigation-icons -->
+        </nav>
+        <!-- closing tag for navigation -->
+      </header>
+      <!-- to here for the navbar. head to the css -->
 
-          </ul>
-        </div>
-      </div>
-    </nav>
-      <!-- header section -->
-     <section class="header">
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-        </ol>
-      
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <img src="static/img/slides/hero-image.png" alt="..." class="img-responsive">
-            <div class="carousel-caption">
+    <!-- header section -->
+    <section class="header">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="static/img/slides/hero-image.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption" style="text-align: left; left: 10%;">
               <h3>WELCOME TO</h3>
               <h1>MAVERICK DIGITAL STORES</h1>
               <p>Your best online digital store where you <br> 
-                get everything need.......</p>
-                <a href="#" class="btn bg_blue">Shop Now</a>
+                get everything you need.......</p>
+                <a href="../public/product_category.html"class="btn">Shop Now</a>
             </div>
           </div>
-          <div class="item">
-            <img src="static/img/slides/hero_two.png" alt="..." class="img-responsive">
-            <div class="carousel-caption">
-              <h3>WELCOME TO</h3>
-              <h1>MAVERICK DIGITAL STORES</h1>
-              <p>Your best online digital store where you <br> 
-                get everything need.......</p>
-                <a href="#" class="btn bg_blue">Shop Now</a>
-            </div>
-          </div>
-          <div class="item">
-            <img src="static/img/slides/hero_three.png" alt="..." class="img-responsive">
-            <div class="carousel-caption">
-              <h3>WELCOME TO</h3>
-              <h1>MAVERICK DIGITAL STORES</h1>
-              <p>Your best online digital store where you <br> 
-                get everything need.......</p>
-                <a href="#" class="btn bg_blue">Shop Now</a>
-            </div>
-          </div>
-          <div class="item">
-            <img src="static/img/slides/hero_four.png" alt="..." class="img-responsive">
-            <div class="carousel-caption">
-              <h3>WELCOME TO</h3>
-              <h1>MAVERICK DIGITAL STORES</h1>
-              <p>Your best online digital store where you <br> 
-                get everything need.......</p>
-                <a href="#" class="btn bg_blue">Shop Now</a>
-            </div>
-          </div>
-         
-          <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-        
-        </div>
-      
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-          <span class="" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-          <span class="" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-      </section>
-
-      <div class="container mt-5">
-        <div class="d-flex justify-content-between align-items-center mb-3"> 
-          <h1 class="text-center">Featured Products</h1>
-        <hr>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card ">
-                   <div class="bg_grey p3 " style="border-radius: 2%;">
-                    <div class="">
-                      <h4><a href=""class="fa fa-cart-plus pull-right white bg_blue p5"></a></h4><br><br>
-                      <h4><a href=""class="fa fa-heart pull-right white bg_blue p5"></a></h4>
-                  </div>
-                  <div class="text-center"> <img src="static/img/speaker.png" width="250"> 
-                  </div>
-                   </div>
-                    <div class="">
-                        <h3>Speaker<p class="text-danger pull-right">&#8358;41,000</p></h3> 
-                        <p>A very goood speaker that will change your musical experience .....</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card ">
-                   <div class="bg_grey p3 " style="border-radius: 2%;">
-                    <div class="">
-                      <h4><a href=""class="fa fa-cart-plus pull-right white bg_blue p5"></a></h4><br><br>
-                      <h4><a href=""class="fa fa-heart pull-right white bg_blue p5"></a></h4>
-                  </div>
-                  <div class="text-center"> <img src="static/img/ups.png" width="250"> 
-                  </div>
-                   </div>
-                    <div class="">
-                        <h3>Speaker<p class="text-danger pull-right">&#8358;41,000</p></h3> 
-                        <p>A very goood speaker that will change your musical experience .....</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card ">
-                   <div class="bg_grey p3 " style="border-radius: 2%;">
-                    <div class="">
-                      <h4><a href=""class="fa fa-cart-plus pull-right white bg_blue p5"></a></h4><br><br>
-                      <h4><a href=""class="fa fa-heart pull-right white bg_blue p5"></a></h4>
-                  </div>
-                  <div class="text-center"> <img src="static/img/watch.png" width="250"> 
-                  </div>
-                   </div>
-                    <div class="">
-                        <h3>Speaker<p class="text-danger pull-right">&#8358;41,000</p></h3> 
-                        <p>A very goood speaker that will change your musical experience .....</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card ">
-                   <div class="bg_grey p3 " style="border-radius: 2%;">
-                    <div class="">
-                      <h4><a href=""class="fa fa-cart-plus pull-right white bg_blue p5"></a></h4><br><br>
-                      <h4><a href=""class="fa fa-heart pull-right white bg_blue p5"></a></h4>
-                  </div>
-                  <div class="text-center"> <img src="static/img/holder.png" width="250"> 
-                  </div>
-                   </div>
-                    <div class="">
-                        <h3>Speaker<p class="text-danger pull-right">&#8358;41,000</p></h3> 
-                        <p>A very goood speaker that will change your musical experience .....</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card ">
-                   <div class="bg_grey p3 " style="border-radius: 2%;">
-                    <div class="">
-                      <h4><a href=""class="fa fa-cart-plus pull-right white bg_blue p5"></a></h4><br><br>
-                      <h4><a href=""class="fa fa-heart pull-right white bg_blue p5"></a></h4>
-                  </div>
-                  <div class="text-center"> <img src="static/img/dvd.png" width="250"> 
-                  </div>
-                   </div>
-                    <div class="">
-                        <h3>Speaker<p class="text-danger pull-right">&#8358;41,000</p></h3> 
-                        <p>A very goood speaker that will change your musical experience .....</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card ">
-                   <div class="bg_grey p3 " style="border-radius: 2%;">
-                    <div class="">
-                      <h4><a href=""class="fa fa-cart-plus pull-right white bg_blue p5"></a></h4><br><br>
-                      <h4><a href=""class="fa fa-heart pull-right white bg_blue p5"></a></h4>
-                  </div>
-                  <div class="text-center"> <img src="static/img/battery.png" width="250"> 
-                  </div>
-                   </div>
-                    <div class="">
-                        <h3>Speaker<p class="text-danger pull-right">&#8358;41,000</p></h3> 
-                        <p>A very goood speaker that will change your musical experience .....</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-  </div>
-
-    <div class="container">
-      <img src="static/img/ad.jpg" alt="img-responsive">
-    </div>
-
-
-          <!-- header section -->
-          <section class="partners">
-            <h2 class="text-center">Our Partners</h2>
-            <div id="carousel-example-generic_two" class="carousel slide" data-ride="carousel">
-              <!-- Indicators -->
-              <!-- <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic_two" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic_two" data-slide-to="1"></li>
-              </ol> -->
-            
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                  <img src="static/img/partners.png" alt="..." class="img-responsive">
-                  <div class="carousel-caption">
- 
-                  </div>
-                </div>
-                <div class="item">
-                  <img src="static/img/partner-2.png" alt="..." class="img-responsive">
-                  <div class="carousel-caption">
- 
-                  </div>
-                </div>
-                           
-                <!-- Controls -->
-              <a class="left carousel-control" href="#carousel-example-generic_two" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="right carousel-control" href="#carousel-example-generic_two" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-              
-              </div>
           
-            </section>
-            <footer>
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-3">
-                    <h3>Contact Us</h3>
-                    <ul>
-                      <li><i class="fa fa-home "></i> Unity Crescent Ikoyi GRA, Ikoyi, Lagos</li>
-                      <li><i class="fa fa-envelope"></i> info@prosport.com</li>
-                      <li><i class="fa fa-phone"></i> +234 801 2345 678</li>
-                    </ul>
-                  </div>
-        
-                  <div class="col-md-3">
-                    <h3>Useful Links</h3>
-                    <ul>
-                      <li><a href="#"><i class="fa fa-chevron-circle-right "></i> Home</a></li>
-                      <li><a href="#"><i class="fa fa-chevron-circle-right "></i> About Us</a></li>
-                      <li><a href="#"><i class="fa fa-chevron-circle-right "></i> Product</a></li>
-                      <li><a href="#"><i class="fa fa-chevron-circle-right "></i> Wishlist</a></li>
-                      <li><a href="#"><i class="fa fa-chevron-circle-right "></i> Cart</a></li>
-                    </ul>
-                  </div>
-        
-                  <div class="col-md-2">
-                    <h3>Social Media</h3>
-                    <ul>
-                      <li><a href="#"><i class="fa fa-twitter "></i> Twitter</a></li>
-                      <li><a href="#"><i class="fa fa-facebook "></i> Facebook </a></li>
-                      <li><a href="#"><i class="fa fa-instagram "></i> Instagram </a></li>
-                      
-                    </ul>
-                  </div>
-        
-                  <div class="col-md-4">
-                    <form class="" action="#" method="post">
-                      <div class="form-group">
-                        <h3>Enter email to subscribe to our newsletter.</h3>
-                        <input type="email" name="email" class="form-control" placeholder="Enter e-mail">
-                        <button class="bt btn-info btn-sm p4">Submit</button>
-                      </div>
-                    </form>
-                  </div>
+          <div class="carousel-item">
+            <img src="static/img/slides/hero_two.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption" style="text-align: left; left: 10%;">
+              <h3>WELCOME TO</h3>
+              <h1>MAVERICK DIGITAL STORES</h1>
+              <p>Your best online digital store where you <br> 
+                get everything you need.......</p>
+                <a href="../public/product_category.html" class="btn">Shop Now</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="static/img/slides/hero_three.png" class="d-block w-100" alt="...">
+             <div class="carousel-caption" style="text-align: left; left: 10%;">
+              <h3>WELCOME TO</h3>
+              <h1>MAVERICK DIGITAL STORES</h1>
+              <p>Your best online digital store where you <br> 
+                get everything you need.......</p>
+                <a href="../public/product_category.html" class="btn">Shop Now</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="static/img/slides/hero_four.png" class="d-block w-100" alt="...">
+             <div class="carousel-caption" style="text-align: left; left: 10%;">
+              <h3>WELCOME TO</h3>
+              <h1>MAVERICK DIGITAL STORES</h1>
+              <p>Your best online digital store where you <br> 
+                get everything you need.......</p>
+                <a href="../public/product_category.html" class="btn">Shop Now</a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- featured product  -->
+
+    <div class="container">
+      <div class=""> 
+        <h1 class="text-center pt3" id="featured_box" >Featured Products</h1>
+      <hr>
+      <div class="row">
+          <div class="col-md-4">
+              <div class="featured_box">
+                 <div class="bg_grey p3 " style="border-radius: 2%;">
+                  <div class="">
+                    <h4><a href=""class="fa fa-cart-plus pull-right white bg_blue p5 cart"></a></h4><br><br>
+                    <h4><a href=""class="fa fa-heart pull-right white bg_blue p5 wish"></a></h4>
                 </div>
-                <hr>
-                <div class="row">
-                  <div class="text-center">
-                    <p>Copyright &copy; 2021 MDS. All Rights Reserved.</p>
-                  </div>
-              
+                <div class=" img-holder text-center"> <img src="static/img/speaker.png" width="250"> 
+                  <a href="../public/product_page.html" class="btn btn-info">Buy</a>
                 </div>
-        
-                <!-- <div class="row">
-                  <div class="col-md-4 col-md-offset-4">
-                    <form class="" action="#" method="post">
-                      <div class="form-group">
-                        <input type="email" name="email" class="form-control" placeholder="Enter e-mail">
-                      </div>
-                    </form>
+                 </div>
+                  <div class="">
+                      <h3>Speaker<p class="text-danger pull-right">&#8358;41,000</p></h3> 
+                      <p>A very goood speaker that will change your musical experience .....</p>
                   </div>
-                </div> -->
               </div>
-            </footer>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="static/js/jquery-3.3.1.min.js"></script>
-    <script src="static/js/bootstrap.min.js"></script>
+          </div>
+          <div class="col-md-4">
+              <div class="featured_box">
+                 <div class="bg_grey p3 " style="border-radius: 2%;">
+                  <div class="">
+                    <h4><a href=""class="fa fa-cart-plus pull-right white bg_blue p5 cart"></a></h4><br><br>
+                    <h4><a href=""class="fa fa-heart pull-right white bg_blue p5 wish"></a></h4>
+                </div>
+                <div class=" img-holder text-center"> <img src="static/img/dvd.png" width="250"> 
+                  <a href="../public/product_page.html" class="btn btn-info">Buy</a>
+                </div>
+                 </div>
+                  <div class="">
+                      <h3>DVD<p class="text-danger pull-right">&#8358;65,000</p></h3> 
+                      <p>A very goood speaker that will change your musical experience .....</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="featured_box">
+                 <div class="bg_grey p3 " style="border-radius: 2%;">
+                  <div class="">
+                    <h4><a href=""class="fa fa-cart-plus pull-right white bg_blue p5 cart"></a></h4><br><br>
+                    <h4><a href=""class="fa fa-heart pull-right white bg_blue p5 wish"></a></h4>
+                </div>
+                <div class=" img-holder text-center"> <img src="static/img/battery.png" width="250"> 
+                  <a href="../public/product_page.html" class="btn btn-info">Buy</a>
+                </div>
+                 </div>
+                  <div class="">
+                      <h3>Battery<p class="text-danger pull-right">&#8358;45,000</p></h3> 
+                      <p>A very goood speaker that will change your musical experience .....</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="featured_box">
+                 <div class="bg_grey p3 " style="border-radius: 2%;">
+                  <div class="">
+                    <h4><a href=""class="fa fa-cart-plus pull-right white bg_blue p5 cart"></a></h4><br><br>
+                    <h4><a href=""class="fa fa-heart pull-right white bg_blue p5 wish"></a></h4>
+                </div>
+                <div class=" img-holder text-center"> <img src="static/img/holder.png" width="250"> 
+                  <a href="../public/product_page.html" class="btn btn-info">Buy</a>
+                </div>
+                 </div>
+                  <div class="">
+                      <h3>Lamp<p class="text-danger pull-right">&#8358;20,000</p></h3> 
+                      <p>A very goood speaker that will change your musical experience .....</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="featured_box">
+                 <div class="bg_grey p3 " style="border-radius: 2%;">
+                  <div class="">
+                    <h4><a href=""class="fa fa-cart-plus pull-right white bg_blue p5 cart"></a></h4><br><br>
+                    <h4><a href=""class="fa fa-heart pull-right white bg_blue p5 wish"></a></h4>
+                </div>
+                <div class=" img-holder text-center"> <img src="static/img/watch.png" width="250"> 
+                  <a href="../public/product_page.html" class="btn btn-info">Buy</a>
+                </div>
+                 </div>
+                  <div class="">
+                      <h3>Watch<p class="text-danger pull-right">&#8358;57,000</p></h3> 
+                      <p>A very goood speaker that will change your musical experience .....</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="featured_box">
+                 <div class="bg_grey p3 " style="border-radius: 2%;">
+                  <div class="">
+                    <h4><a href=""class="fa fa-cart-plus pull-right white bg_blue p5 cart"></a></h4><br><br>
+                    <h4><a href=""class="fa fa-heart pull-right white bg_blue p5 wish"></a></h4>
+                </div>
+                <div class=" img-holder text-center"> <img src="static/img/ups.png" width="250"> 
+                  <a href="../public/product_page.html" class="btn btn-info">Buy</a>
+                </div>
+                 </div>
+                  <div class="">
+                      <h3>UPS<p class="text-danger pull-right">&#8358;80,000</p></h3> 
+                      <p>A very goood speaker that will change your musical experience .....</p>
+                  </div>
+              </div>
+          </div>
   
-    <script src="static/js/app.js"></script>
-  </body>
+         
+      </div>
+  </div>
+</div>
+
+<!-- ads -->
+<div class="container">
+  <img src="static/img/ad.jpg" alt="img-responsive">
+</div>
+
+<!-- partner  -->
+
+<section class="partners">
+  <h2 class="text-center">Our partners</h2>
+  <div id="carouselExampleControl-two" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="static/img/partners.png" class="d-block w-100" alt="...">
+      </div>
+      
+      <div class="carousel-item">
+        <img src="static/img/partner-2.png" class="d-block w-100" alt="...">
+
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControl-two" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControl-two" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+
+
+
+      <footer>
+      <div class="footer-contents">
+        <div class="contact-us-container">
+          <h3 class="footer-title mt-4">Contact Us:</h3>
+
+          <p class="footer-description mt-4">
+            <span> <i class="fa fa-home"></i></span> 28B,Unity Crescent, 
+            Ikeja GRA,Lagos
+          </p>
+          <p class="footer-description">
+            <span><i class="fa fa-envelope" id="envelope"></i></span
+            >info@mds.com
+          </p>
+          <p class="footer-description">
+            <span><i class="fa fa-phone mr-3"></i></span>08033445566
+          </p>
+        </div>
+
+        <div class="useful-links-container">
+          <h3 class="footer-title mt-4">Useful Links:</h3>
+
+          <ul class="footer-links">
+            <li class="footer-links-item">
+              <a href=""> <span>&#62;</span> Home </a>
+            </li>
+            <li class="footer-links-item">
+              <a href=""> <span>&#62;</span> About Us </a>
+            </li>
+            <li class="footer-links-item">
+              <a href=""> <span>&#62;</span> Products </a>
+            </li>
+            <li class="footer-links-item">
+              <a href=""> <span>&#62;</span> Wishlist </a>
+            </li>
+            <li class="footer-links-item">
+              <a href=""> <span>&#62;</span> Cart </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="social-media-container">
+          <div class="social-media-contents mt-4">
+            <h3 class="footer-title">Social Media</h3>
+            <a href="#" class="fa fa-twitter" id="twitter"></a>
+            <a href="#" class="fa fa-facebook" id="facebook"></a>
+            <a href="#" class="fa fa-instagram" id="instagram"></a>
+          </div>
+        </div>
+
+        <div class="subscribe-container">
+          <p class="footer-description1 mt-4">
+            Subscribe To Our Newsletter <br />
+            To Stay Up-To-Date
+            With Latest Products.
+          </p>
+
+          <div class="col-9" id="form-container">
+            <div class="input-group">
+              <div class="input-group-prepend"></div>
+              <input
+                type="text"
+                class="form-control"
+                id="inlineFormInputGroupUsername"
+                placeholder="Email"
+              />
+              <div class="input-group-text"><i class="fa fa-envelope"></i></div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="">
+        <div class="text-center copy mt-4">
+                 <hr>
+                  Copyright &copy; 2021 MDS. All Rights Reserved.
+                </div>
+            
+              </div>
+    </footer>
+
+
+
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../static/js/nav.js"></script>
+</body>
+
 </html>
