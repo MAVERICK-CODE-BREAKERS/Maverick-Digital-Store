@@ -5,6 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./../static/css/register.css">
+  <!-- FONT AWESOME LINK -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
   <title>MDS | REGISTER</title>
 </head>
 <body>
@@ -16,24 +19,39 @@
   <div class="div-1">
     <div class="Path-flex">
       <a href="Login.html"><h3>Login</h3></a>
-      <a href="#"><h3>Register</h3></a>
+      <a class='regline' href="#"><h3>Register</h3></a>
     </div>
     <form class="Register">
-      <input type="text" id="Fullname" placeholder="Full name" />
-      <input type="text" id="P-username" placeholder="preffered username"/>
-      <input type="text" id="user-mail" placeholder="username/email"/>
-      <input type="number" id="phone" placeholder="phone"/>
-      <input type="text" id="password" placeholder="password"/>
-      <input type="text" id="c-password" placeholder="confirm password"/>
+      <div class="input-container"><input type="text" id="Fullname" placeholder="Full name" /><i class="fas fa-user"></i>
+        <small>error message</small>
+      </div>
+      <div class="input-container"><input type="text" id="P-username" placeholder="preffered username"/><i class="fas fa-user"></i>
+        <small>error message</small>
+      </div>
+      <div class="input-container"><input type="text" id="user-mail" placeholder="username/email"/><i class="fas fa-envelope"></i>
+        <small>error message</small>
+      </div>
+      <div class="input-container"><input type="number" id="phone" placeholder="phone"/><i class="fas fa-phone-alt"></i>
+        <small>error message</small>
+      </div>
+      <div class="input-container"><input type="password" id="password" placeholder="password"/><i class="fas fa-lock"></i>
+        <small>error message</small>
+      </div>
+      <div class="input-container"><input type="password" id="c-password" placeholder="confirm password"/><i class="fas fa-lock"></i>
+        <small>error message</small>
+      </div>
+
       <div class="check">
       <input type="checkbox" name="terms-and-conditions" id="terms-and-conditions">
          <label for="terms-and-conditions">I have read, Understood and accept the terms and conditions</label>
         </div>
 
          <div class="LinkToSignIn">Have An Account? Click <a href="#">Here</a> To Sign In </div>
-      <input type="submit" id="Register" value="Register" />
+      <button onclick="AddUser()" id="Register" type="submit">Register <i class="fas fa-sign-in-alt"></i></button>
     </form>
   </div>
 </div>
+
+<script src="./../static/js/register.js"></script>
 </body>
 </html>

@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../static/css/installment-form.css">
-  
-   
+        <link rel="stylesheet" href="../static/css/installment-form.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -22,13 +22,11 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-
-
-   
+    
     <title>MDS | Installment</title>
 </head>
 <body>
-   <!-- copy from here -->
+    <!-- copy from here -->
     <!-- navbar -->
     <main>
       <!-- header opening tag -->
@@ -42,7 +40,7 @@
             </div>
             <div class="navigation-item-container1">
               <img
-                src="../static/img/icon-hamburger.svg"
+                src="../static/img/icon-hamburger.png"
                 class="hamburger"
                 alt=""
                 id="nav-bar-icon"
@@ -53,9 +51,10 @@
           <!-- opening tag for navigation-category-content -->
           <div class="navigation-category-content" id="navigation">
             <ul class="nav-links">
-              <li class="nav-links-item"><a href="">CONSOLES</a></li>
-              <li class="nav-links-item"><a href="">WATCHES</a></li>
-              <li class="nav-links-item"><a href="">ACCESORIES</a></li>
+              <li class="nav-links-item"><a href="../public/product_category.html">CONSOLES</a></li>
+              <li class="nav-links-item"><a href="../public/product_category.html">LAPTOPS</a></li>
+              <li class="nav-links-item"><a href="../public/product_category.html">WATCHES</a></li>
+              <li class="nav-links-item"><a href="../public/product_category.html">ACCESSORIES</a></li>
             </ul>
           </div>
           <!-- closing tag for navigation category -->
@@ -63,16 +62,26 @@
           <div class="navigation-icons" id="navigation1">
             <ul class="icon-links">
               <li class="icon-links-item" >
-                <i class="fa fa-heart" style="font-size: 36px"></i>
+                <i class="fa fa-heart" style="font-size: 23px"></i>
+                <div id="wish">
+                  <!-- <p class="count"> 0</p> -->
+                </div>
               </li>
               <li class="icon-links-item">
-                <i class="fa fa-shopping-cart" style="font-size: 36px"></i>
+                <i class="fa fa-shopping-cart" style="font-size: 23px"></i>
+                 <div id="cart">
+                  <!-- <p class="count2"> 0</p> -->
+                </div>
+              </li>
+              <li class="icon-links-item active">
+                <i class="fa fa-search" aria-hidden="true" style="font-size: 23px"></i>
+                <div class="search-box">
+                  <input type="text" class="text" placeholder=""/>
+                  <input type="button" value="Search"/>
+  		          </div>
               </li>
               <li class="icon-links-item">
-                <i class="fa fa-search" style="font-size: 36px"></i>
-              </li>
-              <li class="icon-links-item">
-                <button type="button" class="btn btn-light">
+                <button type="button" class="loginBtn">
                   LOGIN/REGISTER
                 </button>
               </li>
@@ -151,10 +160,10 @@
 
 
 
-   <footer>
+    <footer>
       <div class="footer-contents">
         <div class="contact-us-container">
-          <h3 class="footer-title mt-4">Contact Us:</h3>
+          <h4 class="footer-title mt-4">Contact Us:</h4>
 
           <p class="footer-description mt-4">
             <span> <i class="fa fa-home"></i></span> 28B,Unity Crescent, 
@@ -170,30 +179,30 @@
         </div>
 
         <div class="useful-links-container">
-          <h3 class="footer-title mt-4">Useful Links:</h3>
+          <h4 class="footer-title mt-4">Useful Links:</h4>
 
           <ul class="footer-links">
             <li class="footer-links-item">
-              <a href="index.html"> <span>&#62;</span> Home </a>
+              <a href=""> <span>&#62;</span> Home </a>
             </li>
             <li class="footer-links-item">
-              <a href="#"> <span>&#62;</span> About Us </a>
+              <a href=""> <span>&#62;</span> About Us </a>
             </li>
             <li class="footer-links-item">
-              <a href="product_category.html"> <span>&#62;</span> Products </a>
+              <a href=""> <span>&#62;</span> Products </a>
             </li>
             <li class="footer-links-item">
-              <a href="wishlist.html"> <span>&#62;</span> Wishlist </a>
+              <a href=""> <span>&#62;</span> Wishlist </a>
             </li>
             <li class="footer-links-item">
-              <a href="cart_page.html"> <span>&#62;</span> Cart </a>
+              <a href=""> <span>&#62;</span> Cart </a>
             </li>
           </ul>
         </div>
 
         <div class="social-media-container">
           <div class="social-media-contents mt-4">
-            <h3 class="footer-title">Social Media</h3>
+            <h4 class="footer-title">Social Media</h4>
             <a href="#" class="fa fa-twitter" id="twitter"></a>
             <a href="#" class="fa fa-facebook" id="facebook"></a>
             <a href="#" class="fa fa-instagram" id="instagram"></a>
@@ -203,7 +212,7 @@
         <div class="subscribe-container">
           <p class="footer-description1 mt-4">
             Subscribe To Our Newsletter <br />
-            To Stay Up-To-Date <br />
+            To Stay Up-To-Date 
             With Latest Products.
           </p>
 
@@ -216,19 +225,22 @@
                 id="inlineFormInputGroupUsername"
                 placeholder="Email"
               />
-              <button class="Submit-Mail"><div class="input-group-text"><i class="fa fa-envelope"></i></div></button>
+              <div class="input-group-text"><i class="fa fa-envelope"></i></div>
             </div>
           </div>
         </div>
         
       </div>
       <div class="">
-        <div class="text-center copy">
-                 
+        <div class="text-center copy mt-4">
+                 <hr>
                   Copyright &copy; 2021 MDS. All Rights Reserved.
                 </div>
             
               </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../static/js/nav.js"></script>
 </body>
 </html>
