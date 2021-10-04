@@ -84,7 +84,33 @@ div.navigation-image-container > img{
   background-color: white;
   box-shadow: #444444;
 }
-.count{
+#wish{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  color: #ffffff;
+  position: absolute;
+  top: 11px;
+  right: 443px;
+  font-size: 12px;
+  text-align: center;
+}
+#cart{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  color: #ffffff;
+  position: absolute;
+  top: 11px;
+  right: 347px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* .count{
   position: absolute;
   top: 8px;
   right: 425px;
@@ -99,7 +125,7 @@ div.navigation-image-container > img{
   font-size: 12px;
   font-weight: bold;
   color: red
-}
+} */
 .navigation-icons {
   flex: 2;
 }
