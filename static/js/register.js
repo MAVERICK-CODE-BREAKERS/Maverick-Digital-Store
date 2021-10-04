@@ -76,3 +76,23 @@ function SetSucessMessage(inputid){
 
   controlform.className = 'input-container success'
 }
+
+// ADDING USER DATA TO DATA BASE
+ function AddUser(){
+   let all_users = JSON.parse(localStorage.getItem('userdb'));
+
+   if (all_users == null){
+     all_users = []
+   }
+
+   let User = {
+     'fullname' : fullname.value,
+     'username' : username.value,
+     'email' : usermail.value,
+     'phoneNumber' : phone.value,
+     'password' : password.value
+   }
+
+   all_users.push(User)
+   localStorage.setItem('userdb', JSON.stringify(all_users))
+ }
