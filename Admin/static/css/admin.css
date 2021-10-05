@@ -33,16 +33,20 @@ body{
     top: 0;
     left: 0;
     width: 100%;
+    padding-left: 10px;
 }
+
 
 .navigation ul li{ 
     position: relative;
     width: 100%;
     list-style: none;
+    
 }
 
 .navigation ul li:hover{
     background: #29CBFF;
+    border-left: 4px solid white;
 }
 
 .navigation ul li:nth-child(1){
@@ -51,6 +55,7 @@ body{
 
 .navigation ul li:nth-child(1):hover{
     background: transparent;
+    border-left: none;
 }
 
 .navigation ul li a{
@@ -79,7 +84,7 @@ body{
 .navigation ul li a .title{
     position: relative;
     display: block;
-    padding: 0 10px;
+    padding: 0 5px;
     height: 60px;
     line-height: 60px;
     white-space: nowrap;
@@ -199,12 +204,13 @@ body{
 
 .cardBox .card .numbers{
     position: relative;
-    font-size: 2em;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
 .cardBox .card .cardName{
     color: #999;
+    font-size: 0.8rem;
 }
 
 .cardBox .card .iconBox{
@@ -236,7 +242,7 @@ body{
 }
 
 .cardHeader h2{
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .btn{
@@ -266,13 +272,14 @@ body{
     border-bottom: none;
 }
 
-.details .recentOrders table tbody tr:hover{
-    background: #03a9f4;
+/* .details .recentOrders table tbody tr:hover{
+    padding-left: 10px;
+    background: #15aff7;
     color: #fff;
-}
+} */
 
 .details .recentOrders table tr td{
-    padding: 9px 5px;
+    padding: 15px 5px;
 }
 
 .details .recentOrders table thead tr td:last-child,
@@ -293,28 +300,32 @@ body{
 
 .status{
     position: relative;
-    padding: 2px 4px;
+    padding: 4px 8px;
     color: #fff;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 0.8rem;
     font-weight: 300;
     letter-spacing: 1px;
 }
 
 .delivered{
-    background: green;
+    background: #e5faf2;
+    color: #3bb077 ;
 }
 
 .pending{
-    background: #f9ca3f;
+    background: #faf0d4;
+    color: #e4b119;
 }
 
 .return{
-    background: #f00;
+    background: #fff0f1;
+    color: #d95087;
 }
 
 .inprogress{
-    background: #1795ce;
+    background: #ebf1fe;
+    color: #2a7ade;
 }
 
 .details .recentCustomers{
@@ -322,7 +333,7 @@ body{
     /* display: grid; */
     /* min-height: 500px; */
     background: #fff;
-    padding: 20px;
+    padding: 30px;
 }
 
 .details .recentCustomers .imgBx{
@@ -347,11 +358,11 @@ body{
     color: #999;
 }
 
-.details .recentCustomers table tr:hover,
+/* .details .recentCustomers table tr:hover,
 .details .recentCustomers table tr:hover td h4 span{
     background: #03a9f4;
     color: #fff;
-}
+} */
 
 .details .recentCustomers table tr td{
     padding: 7px 10px;
