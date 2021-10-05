@@ -76,21 +76,30 @@ div.navigation-image-container > img{
   background-color: white;
   box-shadow: #444444;
 }
-.count{
+#wish{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  color: #ffffff;
   position: absolute;
-  top: 8px;
-  right: 425px;
+  top: 11px;
+  right: 443px;
   font-size: 12px;
-  font-weight: bold;
-  color: red
+  text-align: center;
 }
-.count2{
+#cart{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  color: #ffffff;
   position: absolute;
-  top: 8px;
-  right: 331px;
+  top: 11px;
+  right: 347px;
   font-size: 12px;
-  font-weight: bold;
-  color: red
+  font-weight: 600;
+  text-align: center;
 }
 .navigation-icons {
   flex: 2;
