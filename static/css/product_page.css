@@ -263,7 +263,6 @@ div.navigation-image-container > img{
     background: #E5E5E5;
     border-radius: 20px;
     padding: 20px 0;
-    
 }
 .phone_img img{
     width: 250px;
@@ -509,3 +508,52 @@ p.footer-description1 {
 }
 
 /* end here for the navbar and footer responsiveness  now to Javascript. head to index and copy everything there*/
+
+
+/* Responsive for the main body */
+@media screen and (max-width: 768px) {
+  .product_section{
+    flex-direction: column;
+    margin: 50px 0px 30px 0px;
+    padding: 0px 50px;
+  }  
+  .product_img {
+    margin-bottom: 50px;
+  }
+  .apple-iphone{
+    height: 290px;
+    align-items: center;
+  }
+  .add_cart_button{
+    padding: 10px 32px;
+    margin: 20px 0px;
+}
+  .rel_product{
+    margin: 30px 0px 50px 0px;
+    padding: 0px 50px;
+  }
+  .products_row {
+    flex-direction: column;  
+  }
+  .products_column{
+    margin-top: 10px;
+  }
+  #img1, #img2{
+    margin-right: 0px;
+  }
+  .phone_img{
+    padding: 20px 0;
+  }
+  .phone_img img{
+    width: 200px;
+    height: 200px;
+    align-items: center;
+  }
+  #shopping-cart1, #shopping-cart2, #shopping-cart3 {
+    display: none;
+  }
+
+  #heart1, #heart2, #heart3 {
+    display: none;
+  }
+}
