@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MDS | New Products</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" 
+    integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"> -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../static/css/NewProducts.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+          <ul>
+              <li>
+                  <a href="/index.html">
+                      <span class="title"><img src="../static/img/maverick_logo2.png" alt="MDS"></span>
+                  </a>
+              </li>
+              <li>
+                  <a href="./admin.html">
+                      <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                      <span class="title">Dashboard</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+                      <span class="title">Users</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <span class="icon"><i class="fa fa-comments" aria-hidden="true"></i></span>
+                      <span class="title">Messages</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="./products.html">
+                      <span class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                      <span class="title">Products</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <span class="icon"><i class="fa fa-credit-card" aria-hidden="true"></i></span>
+                      <span class="title">Orders</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                      <span class="title">Settings</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <span class="icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                      <span class="title">Password</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                      <span class="title">Sign Out</span>
+                  </a>
+              </li>
+          </ul>
+      </div>
+
+      <div class="main">
+          <div class="topbar">
+              <div class="toggle" onclick="toggleMenu();"></div>
+              <div class="search">
+                  <label for="">
+                      <input type="text" placeholder="Search">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                  </label>
+              </div>
+              <div class="user">
+                  <img src="../static/img/ray.jpg" alt="admin">
+              </div>
+          </div>
+
+
+        <section class="title-section">
+          <h1 class="title">New Product</h1>
+          <hr />
+        </section>
+        <section class="first-section">
+          <form>
+            <label for="Image" class="product">Image</label>
+            <i class="fa fa-upload" style="font-size: 36px; cursor: pointer;"></i>
+            <label for="Name" class="product">Name</label>
+            <input type="text" id="name" name="name" class="form-product" />
+            <label for="Name" class="product">Stock</label>
+            <input type="text" id="name" name="name" class="form-product" />
+            <label for="Name" class="product">Price</label>
+            <input type="text" id="name" name="name" class="form-product" />
+            <div class="category-container">
+              <div class="main-category">
+                <label for="Name" class="product">Category</label>
+                <select id="country" name="country" class="form-product">
+                  <option id="laptop" value="Laptop">Laptop</option>
+                  <option id="consoles" value="Consoles">Consoles</option>
+                  <option id="watches" value="Watches">Watches</option>
+                  <option id="accessories" value="Accessories">
+                    Accessories
+                  </option>
+                </select>
+              </div>
+              <div class="sub-category" id="sub-category">
+                <label for="Name" class="product">Sub Category</label>
+                <select id="form-product" name="country" class="form-product">
+                  <option value="dell">Dell</option>
+                  <option value="hp">HP</option>
+                  <option value="Apple">Apple</option>
+                </select>
+              </div>
+              <div class="sub-category1" id="sub-category1">
+                <label for="Name" class="product">Sub Category</label>
+                <select id="form-product" name="country" class="form-product">
+                  <option value="playstation">Playstation</option>
+                  <option value="xbox">Xbox</option>
+                  <option value="nintendo">Nintendo</option>
+                </select>
+              </div>
+              <div class="sub-category2" id="sub-category2">
+                <label for="Name" class="product">Sub Category</label>
+                <select id="form-product" name="country" class="form-product">
+                  <option value="Apple">Apple</option>
+                  <option value="Huawei">Huawei</option>
+                  <option value="Samsung">Samsung</option>
+                </select>
+              </div>
+              <div class="sub-category3" id="sub-category3">
+                <label for="Name" class="product">Sub Category</label>
+                <select id="form-product" name="country" class="form-product">
+                  <option value="powerbanks">PowerBanks</option>
+                  <option value="speakers">Speakers</option>
+                </select>
+              </div>
+            </div>
+            <input type="submit" value="Create" class="create-btn" />
+          </form>
+        </section>
+      </div>
+    </div>
+    <script src="../static/js/NewProduct.js"></script>
+  </body>
+</html>
