@@ -297,6 +297,24 @@ hr{
     text-decoration: none;
     border-radius: 6px;
 }
+
+.add-product {
+    border: none;
+    padding: 0.7em 1.2em;
+    background-color: #1589ad;
+    text-transform: uppercase;
+    cursor: pointer;
+    float: right;
+    font-size: 1em;
+    border-radius: 5px;
+    float: right;
+    white-space: nowrap;
+    color: whitesmoke;
+  }
+  
+  .fa-plus {
+    margin-right: 0.4rem;
+  }
 /* ------- End of Product details ------- */
 
 
@@ -374,3 +392,6 @@ hr{
     }
 
 }
+
+
+
