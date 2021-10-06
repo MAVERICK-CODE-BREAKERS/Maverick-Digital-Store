@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDS | Admin</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" 
+    integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/product_details.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="title"><img src="../static/img/maverick_logo2.png" alt="MDS"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+                        <span class="title">Users</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-comments" aria-hidden="true"></i></span>
+                        <span class="title">Messages</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                        <span class="title">Products</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-credit-card" aria-hidden="true"></i></span>
+                        <span class="title">Orders</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                        <span class="title">Password</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu();"></div>
+                <div class="search">
+                    <label for="">
+                        <input type="text" placeholder="Search">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </label>
+                </div>
+                <div class="user">
+                    <img src="../static/img/ray.jpg" alt="admin">
+                </div>
+            </div>
+
+            <div>
+                <div class="header">
+                    <h2>Product Details</h2>
+                    <a href="#" class="btn">+ ADD PRODUCT</a>
+                </div>
+                <hr>
+            </div>
+
+            <div class="details">
+                <div class="orders">
+                    <div class="laptop-img">
+                        <img src="../static/img/Apple-Macbook-sale.jpg" alt="macbook">
+                        <span class="text-img">Mac Book Air</span>
+                    </div>
+                    <div>
+                        <p><span class="status">ID:</span> MDS-001</p>
+                        <p><span class="status">Amount: </span> #500,000</p>
+                        <p><span class="status">Status: </span> In Stock</p>
+                        <p><span class="status">Stock: </span> 3</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+
+            <div class="details" id="product_form">
+                <div class="orders-form orders">
+                    <form action="" class="form">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" value="Mac Book Air">
+
+                        <label for="status">Status</label>
+                        <select id="status" name="status">
+                            <option value = "In Stock">In Stock</option>
+                        </select>
+
+                        <label for="price">Price</label>
+                        <input type="number" id="price" name="price" placeholder="#500,000">
+
+                        <label for="category">Category</label>
+                        <select id="category" name="category">
+                            <option value = "Laptop">Laptop</option>
+                            <option value = "Phone">Phone</option>
+                        </select>
+
+                        <label for="sub-category">Sub Category</label>
+                        <select id="sub-category" name="sub-category">
+                            <option value = "Apple">Apple</option>
+                            <option value = "HP">HP</option>
+                        </select><br><br>
+
+                        <input type="submit" value="Update">
+                    </form> 
+
+
+                    <div class="laptop-img img2">
+                        <img src="../static/img/Apple-Macbook-sale.jpg" alt="macbook">
+                        <span class="upload-icon"><i class="fa fa-upload" aria-hidden="true"></i></span>
+                    </div>
+
+                </div>
+
+                
+
+            </div>
+        </div>
+
+    </div>
+    <script src="../static/js/admin.js"></script>
+</body>
+</html>
