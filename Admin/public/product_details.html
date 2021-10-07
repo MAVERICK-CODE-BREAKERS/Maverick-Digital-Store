@@ -123,22 +123,64 @@
                         <label for="status">Status</label>
                         <select id="status" name="status">
                             <option value = "In Stock">In Stock</option>
+                            <option value = "Out of Stock">Out of Stock</option>
                         </select>
 
                         <label for="price">Price</label>
                         <input type="number" id="price" name="price" placeholder="&#8358;500,000">
 
-                        <label for="category">Category</label>
-                        <select id="category" name="category">
-                            <option value = "Laptop">Laptop</option>
-                            <option value = "Phone">Phone</option>
-                        </select>
+                        <div class="category-container">
 
-                        <label for="sub-category">Sub Category</label>
-                        <select id="sub-category" name="sub-category">
-                            <option value = "Apple">Apple</option>
-                            <option value = "HP">HP</option>
-                        </select><br><br>
+                            <div class="main-category">
+                                <label for="Name" class="product">Category</label>
+
+                                <select id="country" name="country">
+                                    <option id="laptop" value="Laptop">Laptop</option>
+                                    <option id="consoles" value="Consoles">Consoles</option>
+                                    <option id="watches" value="Watches">Watches</option>
+                                    <option id="accessories" value="Accessories">Accessories</option>
+                                </select>
+                            </div>
+
+                            <div class="sub-category" id="sub-category">
+                                <label for="Name" class="product">Sub Category</label>
+
+                                <select id="form-product" name="country">
+                                    <option value="dell">Dell</option>
+                                    <option value="hp">HP</option>
+                                    <option value="Apple">Apple</option>
+                                </select>
+                            </div>
+
+                            <div class="sub-category1" id="sub-category1">
+                                <label for="Name" class="product">Sub Category</label>
+
+                                <select id="form-product" name="country">
+                                    <option value="playstation">Playstation</option>
+                                    <option value="xbox">Xbox</option>
+                                    <option value="nintendo">Nintendo</option>
+                                </select>
+                            </div>
+
+                            <div class="sub-category2" id="sub-category2">
+                                <label for="Name" class="product">Sub Category</label>
+
+                                <select id="form-product" name="country">
+                                    <option value="Apple">Apple</option>
+                                    <option value="Huawei">Huawei</option>
+                                    <option value="Samsung">Samsung</option>
+                                </select>
+                            </div>
+
+                            <div class="sub-category3" id="sub-category3">
+                                <label for="Name" class="product">Sub Category</label>
+
+                                <select id="form-product" name="country">
+                                    <option value="powerbanks">PowerBanks</option>
+                                    <option value="speakers">Speakers</option>
+                                </select>
+                            </div>
+                        </div>
 
                         <input type="submit" value="Update">
                     </form> 
@@ -146,17 +188,23 @@
 
                     <div class="laptop-img img2">
                         <img src="../static/img/Apple-Macbook-sale.jpg" alt="macbook">
-                        <span class="upload-icon"><i class="fa fa-upload" aria-hidden="true"></i></span>
+                        <span class="upload-icon">
+                            <label for="file-input">
+                                <i class="fa fa-upload" style="font-size: 27px; cursor: pointer;" aria-hidden="true"></i>
+                            </label>
+                            <input type="file" id="file-input" accept="image/png, image/jpeg">
+                            
+                        </span>
                     </div>
 
                 </div>
 
                 
-
             </div>
         </div>
 
     </div>
     <script src="../static/js/admin.js"></script>
+    <script src="../static/js/NewProduct.js"></script>
 </body>
 </html>

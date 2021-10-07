@@ -236,12 +236,15 @@ body{
 }
 .details .orders-form .form select{
     width: 75%;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     background: #F1F1F1;
-    padding: 10px;
+    padding: 17px 10px;
     border-radius: 5px;
     outline: none;
     border: none;
+}
+.category-container select{
+    margin-top: 10px;
 }
 .details .orders-form .form label{
     margin-bottom: 10px;
@@ -250,20 +253,46 @@ body{
 .details .orders-form .form input{
     width: 100%;
     background: #F1F1F1;
-    padding: 10px;
+    padding: 17px 12px;
     border-radius: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     outline: none;
     border: none;
 }
 .details .orders-form .form input[type=submit]{
     background: #1589AD;
+    padding: 15px 12px;
     color: #ffffff;
     font-weight: 600;
     width: 83%;
 }
 .details .orders-form .form input[type=number]::placeholder{
     color: #000;
+}
+input::placeholder{
+    font-size: 15px;
+}
+input[value] {
+    font-size: 15px;
+}
+div.sub-category{
+    flex: 1;
+    display: none;
+}
+  
+div.sub-category1{
+    flex: 1;
+    display: none;
+}
+  
+div.sub-category2{
+    flex: 1;
+    display: none;
+}
+  
+div.sub-category3{
+    flex: 1;
+    display: none;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -313,11 +342,14 @@ hr{
     float: right;
     white-space: nowrap;
     color: whitesmoke;
-  }
+}
+.upload-icon input{
+    visibility:hidden;
+}
   
-  .fa-plus {
+.fa-plus {
     margin-right: 0.4rem;
-  }
+}
 /* ------- End of Product details ------- */
 
 
