@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MDS | Products</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" 
+    integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"> -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../static/css/products.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="/index.html">
+                        <span class="title"><img src="../static/img/maverick_logo2.png" alt="MDS"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./admin.html">
+                        <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+                        <span class="title">Users</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-comments" aria-hidden="true"></i></span>
+                        <span class="title">Reviews</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./products.html">
+                        <span class="icon"><i class="fa fa-product-hunt" aria-hidden="true"></i></span>
+                        <span class="title">Products</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-credit-card" aria-hidden="true"></i></span>
+                        <span class="title">Orders</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                        <span class="title">Password</span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu();"></div>
+                <div class="search">
+                    <label for="">
+                        <input type="text" placeholder="Search">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </label>
+                </div>
+                <div class="user">
+                    <img src="../static/img/ray.jpg" alt="admin">
+                </div>
+            </div>
+            
+        <!-- opening of first-section container -->
+        <section class="first-section">
+          <div class="top-content">
+            <h1 class="title">Products</h1>
+            <div class="button-container">
+              <a href="./NewProduct.html"><button type="button" class="add-product">
+                <i class="fa fa-plus"></i>Add Product
+              </button></a>
+            </div>
+          </div>
+          <hr class="line" />
+          <!-- opening container of Table -->
+          <div style="overflow-x: auto">
+            <table>
+              <tr class="heading">
+                <th>S/N</th>
+                <th>name</th>
+                <th>stock</th>
+                <th>price</th>
+                <th>status</th>
+                <th>order id</th>
+                <th>action</th>
+              </tr>
+              <tr class="content">
+                <td>1</td>
+                <td>
+                  <img
+                    src="../../static/img/Black-apple-macbook.png"
+                    class="avatar"
+                    alt=""
+                  />
+                  Mac Book Air
+                </td>
+                <td>3</td>
+                <td>#500,000</td>
+                <td>In Stock</td>
+                <td>MDS-001</td>
+                <td>
+                  <a href="./product_details.html">
+                    <span class="icon2"><i class="fa fa-pencil-square-o" aria-hidden="true" ></i></span>
+                  </a>
+                    <span class="icon3"><i class="fa fa-trash-o" id="delete" aria-hidden="true" ></i></span>
+                </td>
+              </tr>
+              <tr class="content">
+                <td>2</td>
+                <td>
+                  <img
+                    src="../../static/img/Apple-iPhone-12-Pro-Max.png"
+                    class="avatar"
+                    alt=""
+                  />
+                  Mac Book Air
+                </td>
+                <td>23</td>
+                <td>#500,000</td>
+                <td>In Stock</td>
+                <td>MDS-002</td>
+                <td>
+                  <a href="./product_details.html">
+                    <span class="icon2"><i class="fa fa-pencil-square-o" aria-hidden="true" ></i></span>
+                  </a>
+                    <span class="icon3"><i class="fa fa-trash-o" id="delete" aria-hidden="true" ></i></span>
+                </td>
+              </tr>
+              <tr class="content">
+                <td>3</td>
+                <td>
+                  <img
+                    src="../../static/img/SmartWatches/Apple-min-removebg-preview.png"
+                    class="avatar"
+                    alt=""
+                  />
+                  Mac Book Air
+                </td>
+                <td>2</td>
+                <td>#500,000</td>
+                <td>In Stock</td>
+                <td>MDS-010</td>
+                <td>
+                  <a href="./product_details.html">
+                    <span class="icon2"><i class="fa fa-pencil-square-o" aria-hidden="true" ></i></span>
+                  </a>
+                    <span class="icon3"><i class="fa fa-trash-o" id="delete" aria-hidden="true" ></i></span>
+                </td>
+              </tr>
+              <tr class="content">
+                <td>4</td>
+                <td>
+                  <img
+                    src="../../static/img/xps-TxXuh_hAFd8-unsplash-min.jpg"
+                    class="avatar"
+                    alt=""
+                  />
+                  Mac Book Air
+                </td>
+                <td>0</td>
+                <td>#500,000</td>
+                <td>Out od Stock</td>
+                <td>MDS-100</td>
+                <td>
+                  <a href="./product_details.html">
+                    <span class="icon2"><i class="fa fa-pencil-square-o" aria-hidden="true" ></i></span>
+                  </a>
+                    <span class="icon3"><i class="fa fa-trash-o" id="delete" aria-hidden="true" ></i></span>
+                </td>
+              </tr>
+              <tr class="content">
+                <td>5</td>
+                <td>
+                  <img
+                    src="../../static/img/Flex-laptop.png"
+                    class="avatar"
+                    alt=""
+                  />
+                  Mac Book Air
+                </td>
+                <td>10</td>
+                <td>#500,000</td>
+                <td>In Stock</td>
+                <td>MDS-005</td>
+                <td>
+                  <a href="./product_details.html">
+                    <span class="icon2"><i class="fa fa-pencil-square-o" aria-hidden="true" ></i></span>
+                  </a>
+                    <span class="icon3"><i class="fa fa-trash-o" id="delete" aria-hidden="true" ></i></span>
+                </td>
+              </tr>
+              <tr class="content">
+                <td>6</td>
+                <td>
+                  <img
+                    src="../../static/img/Consoles/PS4-min-removebg-preview.png"
+                    class="avatar"
+                    alt=""
+                  />
+                  Mac Book Air
+                </td>
+                <td>0</td>
+                <td>#500,000</td>
+                <td>In Stock</td>
+                <td>MDS-001</td>
+                <td>
+                  <a href="./product_details.html">
+                    <span class="icon2"><i class="fa fa-pencil-square-o" aria-hidden="true" ></i></span>
+                  </a>
+                    <span class="icon3"><i class="fa fa-trash-o" id="delete" aria-hidden="true" ></i></span>
+                </td>
+              </tr>
+              <tr class="content">
+                <td>6</td>
+                <td>
+                  <img
+                    src="../../static/img/speaker.png"
+                    class="avatar"
+                    alt=""
+                  />
+                  Mac Book Air
+                </td>
+                <td>1</td>
+                <td>#500,000</td>
+                <td>In Stock</td>
+                <td>MDS-019</td>
+                <td>
+                  <a href="./product_details.html">
+                    <span class="icon2"><i class="fa fa-pencil-square-o" aria-hidden="true" ></i></span>
+                  </a>
+                    <span class="icon3"><i class="fa fa-trash-o" id="delete" aria-hidden="true" ></i></span>
+                </td>
+              </tr>
+            </table>
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <p>Are You Sure You Want To Delete?</p>
+                <button type="button" class="yes" id="yes">Yes</button>
+                <button type="button" class="no" id="no">No</button>
+              </div>
+            </div>
+          </div>
+          <!-- closing container of table -->
+        </section>
+        <!-- closing of first-section container -->
+      </div>
+      <!-- closing of main content -->
+    </div>
+    <script src="../static/js/products.js"></script>
+  </body>
+</html>
