@@ -200,6 +200,7 @@ body{
     display: flex;
     justify-content: space-between;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .cardBox .card .numbers{
@@ -233,6 +234,7 @@ body{
     /* min-height: 500px; */
     background: #fff;
     padding: 20px;
+    border-radius: 10px;
 }
 
 .cardHeader{
@@ -334,6 +336,7 @@ body{
     /* min-height: 500px; */
     background: #fff;
     padding: 30px;
+    border-radius: 10px;
 }
 
 .details .recentCustomers .imgBx{

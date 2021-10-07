@@ -90,6 +90,7 @@ body{
     white-space: nowrap;
 }
 
+
 .navigation ul li a img{
     width: 10vw;
     margin-left: 13px;
@@ -193,7 +194,7 @@ section.first-section {
 h1.title {
   font-family: "Poppins", sans-serif;
   display: inline-block;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   padding: 0.3em 0em;
   flex: 1;
 }
@@ -260,8 +261,8 @@ tr.content {
   border: none;
   white-space: nowrap;
   color: whitesmoke;
-  padding: 0.5em 0.7em;
-  font-size: 1.2em;
+  padding: 0.3em 0.7em;
+  font-size: 1em;
   display: inline-block;
   border-radius: 8px;
   background-color: #3cef63;
@@ -274,11 +275,32 @@ tr.content {
   padding-right: 1rem;
 }
 
-.fa-trash-o {
+/* .fa-trash-o {
   color: red;
-  /* margin-top: 0.4rem; */
+  margin-top: 0.4rem;
   cursor: pointer;
   margin-left: 0.3rem;
+}
+.fa-edit{
+  color: #3cef63;
+  cursor: pointer;
+  margin-top: 0.2rem;
+} */
+
+tr a{
+  text-decoration: none;
+}
+
+.icon2 .fa{
+  color:#3cef63;
+  font-size: 25px;
+  cursor: pointer;
+}
+.icon3 .fa{
+  color: red;
+  font-size: 29px;
+  padding-left: 5px;
+  cursor: pointer;
 }
 
 .modal {
