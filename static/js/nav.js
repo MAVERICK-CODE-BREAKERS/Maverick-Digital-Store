@@ -77,38 +77,14 @@ $(document).ready(function () {
 
   displayWish();
 
-// wishlist = () => {
-//   let prdCount = JSON.parse(localStorage.getItem("wishCount"));
-  
-//   if(localStorage.getItem("wishCount")){
-//     document.querySelector(".card-1").innerHTML = "";
-//     prdCount.forEach(product => {
-//       document.querySelector(".card-1").innerHTML += `
-//       <i class="fas fa-times-circle"></i>
-//       <img src="./../static/img/dell-laptop.png" alt="dell-laptop">
-//       <div class="product-details">
-//       <div class="product-name">${product.product_name}</div>
-//       <div class="product-price">${product.product_price}</div>
-//       <div class="stock-info">Availability:<span>In Stock</span></div>
-//       </div>
-//       `;
-//     })
-//   }
-// }
 
-// wishlist()
+const hamburgerIcon = document.querySelector(".hamburger");
+const navigationLinks = document.getElementById("navigation");
+const navigationLinks1 = document.getElementById("navigation1");
 
-
-
-
-
-
-  // clickMe.onclick = function(){
-  //   count.innerHTML++
-  //   count2.innerHTML++;
-  // }
-
-
-
+hamburgerIcon.addEventListener("click", () => {
+  navigationLinks.classList.toggle("navigation-category-content");
+  navigationLinks1.classList.toggle("navigation-icons");
+});
 
 
