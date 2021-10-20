@@ -8,8 +8,11 @@
       type="text/css"
       href="../static/css/product_category.css"
     />
+    <link 
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="../static/css/navbar.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link
       rel="stylesheet"
@@ -29,7 +32,7 @@
     <title>MDS | Product Category</title>
   </head>
   <body>
-     <!-- copy from here -->
+    <!-- copy from here -->
     <!-- navbar -->
     <main>
       <!-- header opening tag -->
@@ -54,17 +57,25 @@
           <!-- opening tag for navigation-category-content -->
           <div class="navigation-category-content" id="navigation">
             <ul class="nav-links">
-               <li class="nav-links-item"><a href="../public/product_category.html">CONSOLES</a></li>
-              <li class="nav-links-item"><a href="../public/product_category.html">LAPTOPS</a></li>
-              <li class="nav-links-item"><a href="../public/product_category.html">WATCHES</a></li>
-              <li class="nav-links-item"><a href="../public/product_category.html">ACCESSORIES</a></li>
+              <li class="nav-links-item">
+                <a href="../public/product_category.html">CONSOLES</a>
+              </li>
+              <li class="nav-links-item">
+                <a href="../public/product_category.html">LAPTOPS</a>
+              </li>
+              <li class="nav-links-item">
+                <a href="../public/product_category.html">WATCHES</a>
+              </li>
+              <li class="nav-links-item">
+                <a href="../public/product_category.html">ACCESSORIES</a>
+              </li>
             </ul>
           </div>
           <!-- closing tag for navigation category -->
           <!-- opening tag for navigation icons -->
           <div class="navigation-icons" id="navigation1">
             <ul class="icon-links">
-              <li class="icon-links-item" >
+              <li class="icon-links-item">
                 <i class="fa fa-heart" style="font-size: 23px"></i>
                 <div id="wish">
                   <!-- <p class="count"> 0</p> -->
@@ -72,21 +83,23 @@
               </li>
               <li class="icon-links-item">
                 <i class="fa fa-shopping-cart" style="font-size: 23px"></i>
-                 <div id="cart">
+                <div id="cart">
                   <!-- <p class="count2"> 0</p> -->
                 </div>
               </li>
               <li class="icon-links-item active">
-                <i class="fa fa-search" aria-hidden="true" style="font-size: 23px"></i>
+                <i
+                  class="fa fa-search"
+                  aria-hidden="true"
+                  style="font-size: 23px"
+                ></i>
                 <div class="search-box">
-                  <input type="text" class="text" placeholder=""/>
-                  <input type="button" value="Search"/>
-  		          </div>
+                  <input type="text" class="text" placeholder="" />
+                  <input type="button" value="Search" />
+                </div>
               </li>
               <li class="icon-links-item">
-                <button type="button" class="loginBtn">
-                  LOGIN/REGISTER
-                </button>
+                <button type="button" class="loginBtn">LOGIN/REGISTER</button>
               </li>
             </ul>
           </div>
@@ -96,14 +109,18 @@
       </header>
       <!-- to here for the navbar. head to the css -->
       <div class="navigation mt-3 pl-5">
-            <p><a href="/index.html" class="li-1">Home</a> > <a href="#" class="li-2"><span class="underline">Products</span></a></p>
-        </div>
+        <p>
+          <a href="/index.html" class="li-1">Home</a> >
+          <a href="#" class="li-2"><span class="underline">Products</span></a>
+        </p>
+      </div>
       <div class="banner-image-container my-5">
-        <a href="../public/installment.html"><img
-          src="../static/img/Banner.jpg"
-          class="img-thumbnail"
-          style="background-color: #e5e5e5"
-          alt=""
+        <a href="../public/installment.html"
+          ><img
+            src="../static/img/Banner.jpg"
+            class="img-thumbnail"
+            style="background-color: #e5e5e5"
+            alt=""
         /></a>
       </div>
       <!-- opening tag of tabs-section -->
@@ -247,6 +264,7 @@
               </div>
             </div>
             <!-- form check for consoles -->
+            <div class="search-container">
             <h3 class="title1 mt-4 mb-2">Prices</h3>
             <div class="price-input-container mt-2 mb-4">
               <form>
@@ -277,6 +295,7 @@
                       >Max. <span> &#8358</span></label> -->
                   </div>
                 </div>
+                </div>
               </form>
             </div>
 
@@ -292,26 +311,27 @@
                 />
               </div>
             </div>
-
-            <h4 class="title3">Top Rated Products</h4>
-            <div class="image-container my-4">
-              <img
-                src="../static/img/iphone.png"
-                class="img-thumbnail"
-                alt=""
-                style="background-color: #e5e5e5"
-              />
+            <div class="top-rated-container">
+              <h4 class="title3">Top Rated Products</h4>
+              <div class="image-container my-4">
+                <img
+                  src="../static/img/iphone.png"
+                  class="img-thumbnail"
+                  alt=""
+                  style="background-color: #e5e5e5"
+                />
+              </div>
+              <h5 class="product-description mt-3">Product A</h5>
+              <h6 class="price-description">#45,000</h6>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <p class="product-description1">
+                A Very Rugged And Useful Laptop For...
+              </p>
             </div>
-            <h5 class="product-description mt-3">Product A</h5>
-            <h6 class="price-description">#45,000</h6>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <p class="product-description1">
-              A Very Rugged And Useful Laptop For...
-            </p>
           </div>
 
           <!-- opening tag for filter section for brands of watches -->
@@ -648,7 +668,7 @@
                 role="tabpanel"
                 aria-labelledby="nav-profile-tab"
               >
-                            <div class="container-for-grid">
+                <div class="container-for-grid">
                   <div class="AppleWatches" id="one">
                     <div class="image-contain2 my-4">
                       <img
@@ -1150,15 +1170,14 @@
       </section>
     </main>
 
-
-      <footer>
+    <footer>
       <div class="footer-contents">
         <div class="contact-us-container">
           <h3 class="footer-title mt-4">Contact Us:</h3>
 
           <p class="footer-description mt-4">
-            <span> <i class="fa fa-home"></i></span> 28B,Unity Crescent, 
-            Ikeja GRA,Lagos
+            <span> <i class="fa fa-home"></i></span> 28B,Unity Crescent, Ikeja
+            GRA,Lagos
           </p>
           <p class="footer-description">
             <span><i class="fa fa-envelope" id="envelope"></i></span
@@ -1203,8 +1222,7 @@
         <div class="subscribe-container">
           <p class="footer-description1 mt-4">
             Subscribe To Our Newsletter <br />
-            To Stay Up-To-Date
-            With Latest Products.
+            To Stay Up-To-Date With Latest Products.
           </p>
 
           <div class="col-9" id="form-container">
@@ -1220,15 +1238,13 @@
             </div>
           </div>
         </div>
-        
       </div>
       <div class="">
         <div class="text-center copy mt-4">
-                 <hr>
-                  Copyright &copy; 2021 MDS. All Rights Reserved.
-                </div>
-            
-              </div>
+          <hr />
+          Copyright &copy; 2021 MDS. All Rights Reserved.
+        </div>
+      </div>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
