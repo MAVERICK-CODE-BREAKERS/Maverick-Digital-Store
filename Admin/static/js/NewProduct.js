@@ -41,7 +41,7 @@ selectButton.addEventListener("change", () => {
     laptopContainer.style.display = "none";
     accessoriesContainer.style.display = "none";
     consolesContainer.style.display = "none";
-    smartWatchesContainer.style.display = "block";
+    smartWatchesContainer.style.display = "none";
   }
   console.log(selectButton.value === "Watches");
 });
