@@ -191,16 +191,13 @@ div.navigation-image-container > img{
   }
 
   .count2, .count{
+    display: none;
     
   }
   #cart{
-    position: absolute;
-    left: 210px;
-    top: 305px;
+    display: none;
   }
   #wish{
-    position: absolute;
-    left: 100px;
-    top: 300px;
+    display: none;
   }
 }
