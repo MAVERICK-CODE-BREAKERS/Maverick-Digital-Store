@@ -93,23 +93,61 @@
           <hr />
         </section>
         <section class="first-section">
-          <form>
-            <label for="Image" class="product">Image</label>
-            <i class="fa fa-upload" style="font-size: 30px; cursor: pointer;"></i>
+          <form onsubmit="getDetails()">
+            <label for="file-input" class="product"
+              >Image
+              <div class="image-input-container">
+                <i
+                  class="fa fa-upload"
+                  style="font-size: 36px; cursor: pointer"
+                ></i>
+                <input accept="image/*" type="file" id="file-input" />
+              </div>
+            </label>
             <label for="Name" class="product">Name</label>
-            <input type="text" id="name" name="name" class="form-product" />
-            <label for="Name" class="product">Stock</label>
-            <input type="text" id="name" name="name" class="form-product" />
+            <input
+              type="text"
+              id="name-form"
+              name="name"
+              class="form-product"
+            />
+            <div class="stock-container">
+              <!-- opening tag for stock container -->
+              <div class="stock-available-container">
+                <label for="stock" class="product">Stock Availability</label>
+                <select id="stock-available" name="stock" class="form-product">
+                  <option value="Out Of Stock">Out Of Stock</option>
+                  <option value="Available">Available</option>
+                </select>
+              </div>
+              <!-- ending tag for stock container -->
+              <div class="stock-amount-container">
+                <label for="Stock" class="product"
+                  >Stock Amount Available</label
+                >
+                <input
+                  type="text"
+                  id="stock-form"
+                  name="name"
+                  class="form-product"
+                />
+              </div>
+            </div>
             <label for="Name" class="product">Price</label>
-            <input type="text" id="name" name="name" class="form-product" />
+            <input
+              type="text"
+              id="price-form"
+              name="name"
+              class="form-product"
+            />
             <div class="category-container">
               <div class="main-category">
-                <label for="Name" class="product">Category</label>
-                <select id="country" name="country" class="form-product">
-                  <option value="select">Select</option>
+                <label for="product-category" class="product">Category</label>
+                <select id="product-category" name="product-category" class="form-product">
                   <option id="laptop" value="Laptop">Laptop</option>
                   <option id="consoles" value="Consoles">Consoles</option>
                   <option id="watches" value="Watches">Watches</option>
+                  <option id="Smartphones" value="Smartphones">Smartphones</option>
                   <option id="accessories" value="Accessories">
                     Accessories
                   </option>
@@ -117,7 +155,7 @@
               </div>
               <div class="sub-category" id="sub-category">
                 <label for="Name" class="product">Sub Category</label>
-                <select id="form-product" name="country" class="form-product">
+                <select id="form-product1" name="country" class="form-product1">
                   <option value="dell">Dell</option>
                   <option value="hp">HP</option>
                   <option value="Apple">Apple</option>
@@ -125,7 +163,7 @@
               </div>
               <div class="sub-category1" id="sub-category1">
                 <label for="Name" class="product">Sub Category</label>
-                <select id="form-product" name="country" class="form-product">
+                <select id="form-product2" name="country" class="form-product1">
                   <option value="playstation">Playstation</option>
                   <option value="xbox">Xbox</option>
                   <option value="nintendo">Nintendo</option>
@@ -133,7 +171,7 @@
               </div>
               <div class="sub-category2" id="sub-category2">
                 <label for="Name" class="product">Sub Category</label>
-                <select id="form-product" name="country" class="form-product">
+                <select id="form-product3" name="country" class="form-product1">
                   <option value="Apple">Apple</option>
                   <option value="Huawei">Huawei</option>
                   <option value="Samsung">Samsung</option>
@@ -141,17 +179,50 @@
               </div>
               <div class="sub-category3" id="sub-category3">
                 <label for="Name" class="product">Sub Category</label>
-                <select id="form-product" name="country" class="form-product">
+                <select id="form-product4" name="country" class="form-product">
                   <option value="powerbanks">PowerBanks</option>
                   <option value="speakers">Speakers</option>
                 </select>
               </div>
+              <div class="sub-category4" id="sub-category4">
+                <label for="Smartphones" class="product">Sub Category</label>
+                <select id="form-product5" name="country" class="form-product">
+                 <option value="Apple">Apple</option>
+                  <option value="Huawei">Xiaomi</option>
+                  <option value="Samsung">Samsung</option>
+                </select>
+              </div>
             </div>
-            <input type="submit" value="Create" class="create-btn" />
+
+            <label for="description" class="product">Description</label>
+            <textarea
+              id="description"
+              name="description"
+              class="form-product"
+              cols="20"
+              rows="9"
+            ></textarea>
+            <!-- <input
+              type="button"
+              value="Create"
+              class="create-btn"
+              onclick="getDetails()"
+            /> -->
+            <button type="submit" class="create-btn" style="cursor: pointer;">Create</button>
+            <!-- for storing -->
+            <input
+              type="text"
+              id="store-form"
+              name="name"
+              class="form-product"
+              style="display: none"
+            />
           </form>
         </section>
+        <table class="display"></table>
       </div>
     </div>
+    <script src="../static/js/admin.js"></script>
     <script src="../static/js/NewProduct.js"></script>
-  </body>
+    </body>
 </html>
