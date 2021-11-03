@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDS | Admin</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" 
+    integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/product_details.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="/index.html">
+                        <span class="title"><img src="../static/img/maverick_logo2.png" alt="MDS"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./admin.html">
+                        <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+                        <span class="title">Users</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-comments" aria-hidden="true"></i></span>
+                        <span class="title">Messages</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./products.html">
+                        <span class="icon"><i class="fa fa-product-hunt" aria-hidden="true"></i></span>
+                        <span class="title">Reviews</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-credit-card" aria-hidden="true"></i></span>
+                        <span class="title">Orders</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu();"></div>
+                <div class="search">
+                    <label for="">
+                        <input type="text" placeholder="Search">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </label>
+                </div>
+                <div class="user">
+                    <img src="../static/img/ray.jpg" alt="admin">
+                </div>
+            </div>
+
+            <div>
+                <div class="header">
+                    <h2>New User</h2>
+                    
+                </div>
+                <hr>
+            </div>
+
+            <div class="details">
+               
+                <div class="orders-form orders">
+                    <form action="" class="form">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" value="Yusuf Taiwo">
+                        <label for="name">Email</label>
+                        <input type="email" id="name" name="name" value="oyintemmy@mansur.com">
+                        <label for="name">Username</label>
+                        <input type="text" id="name" name="name" value="dammyBells">
+                        
+                        <label for="name">Password</label>
+                        <input type="password" id="name" name="name" value="Yusuf Taiwo">
+                        <label for="name">Phone</label>
+                        <input type="number" id="name" name="name" value="2234234534">
+
+                        <label for="name">Address</label>
+                        <input type="text" id="name" name="name" value="Lagos">
+                        <label for="status">Role</label>
+                        <select id="status" name="status">
+                            <option value = "In Stock">Admin</option>
+                            <option value = "Out of Stock">Customer</option>
+                        </select>
+                        <label for="status">Active</label>
+                        <select id="status" name="status">
+                            <option value = "In Stock">Yes</option>
+                            <option value = "Out of Stock">No</option>
+                        </select>
+
+                        
+
+                        <input type="submit" value="Create">
+                    </form> 
+
+
+                    <div class="laptop-img img2">
+                        <img src="../static/img/Apple-Macbook-sale.jpg" alt="macbook">
+                        <span class="upload-icon">
+                            <label for="file-input">
+                                <i class="fa fa-upload" style="font-size: 27px; cursor: pointer;" aria-hidden="true"></i>
+                            </label>
+                            <input type="file" id="file-input" accept="image/png, image/jpeg">
+                            
+                        </span>
+                    </div>
+
+                </div>
+
+                
+            </div>
+        </div>
+
+    </div>
+    <script src="../static/js/admin.js"></script>
+    <script src="../static/js/NewProduct.js"></script>
+</body>
+</html>
