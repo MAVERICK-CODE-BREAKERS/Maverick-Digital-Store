@@ -6,11 +6,7 @@ const phone = document.getElementById('phone')
 const password = document.getElementById('password')
 const Cpassword = document.getElementById('c-password')
 
-// form.addEventListener('submit', (e) => {
-//   e.preventDefault();
 
-//   SignupValidaton()
-// })
 
 form.addEventListener('keyup', (e) => {
   e.preventDefault();
